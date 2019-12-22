@@ -43,7 +43,25 @@
                     <view key="view" contentMode="scaleToFill" id="7qh-Yd-QEU">
                         <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mtkView contentMode="scaleToFill" colorPixelFormat="BGRA8Unorm" depthStencilPixelFormat="Depth32Float" translatesAutoresizingMaskIntoConstraints="NO" id="udY-9y-i5C">
+                                <rect key="frame" x="0.0" y="0.0" width="712" height="854"/>
+                            </mtkView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SJi-da-3oh">
+                                <rect key="frame" x="48" y="904" width="616" height="31"/>
+                            </slider>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZfY-Cw-FNB" firstAttribute="trailing" secondItem="udY-9y-i5C" secondAttribute="trailing" id="7U6-oc-7hK"/>
+                            <constraint firstItem="udY-9y-i5C" firstAttribute="leading" secondItem="ZfY-Cw-FNB" secondAttribute="leading" id="G7S-63-zph"/>
+                            <constraint firstItem="SJi-da-3oh" firstAttribute="leading" secondItem="ZfY-Cw-FNB" secondAttribute="leading" constant="50" id="MU4-Yy-tfq"/>
+                            <constraint firstItem="ZfY-Cw-FNB" firstAttribute="trailing" secondItem="SJi-da-3oh" secondAttribute="trailing" constant="50" id="jZO-JX-BpJ"/>
+                            <constraint firstItem="ZfY-Cw-FNB" firstAttribute="bottom" secondItem="SJi-da-3oh" secondAttribute="bottom" constant="50" id="k0A-sR-e3W"/>
+                            <constraint firstItem="SJi-da-3oh" firstAttribute="centerX" secondItem="7qh-Yd-QEU" secondAttribute="centerX" id="ojA-FJ-xHp"/>
+                            <constraint firstItem="SJi-da-3oh" firstAttribute="top" secondItem="udY-9y-i5C" secondAttribute="bottom" constant="50" id="pQY-d2-F4E"/>
+                            <constraint firstItem="udY-9y-i5C" firstAttribute="top" secondItem="ZfY-Cw-FNB" secondAttribute="top" id="wwY-nN-q16"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZfY-Cw-FNB"/>
                     </view>
                     <navigationItem key="navigationItem" id="3VZ-Oa-cjh"/>
