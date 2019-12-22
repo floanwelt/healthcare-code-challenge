@@ -20,7 +20,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Portal to second view"/>
                                 <connections>
-                                    <segue destination="Q7X-T7-oLj" kind="show" id="Vlw-Tr-Pvb"/>
+                                    <segue destination="Q7X-T7-oLj" kind="presentation" modalPresentationStyle="fullScreen" id="Vlw-Tr-Pvb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,14 +41,14 @@
             <objects>
                 <viewController id="Q7X-T7-oLj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7qh-Yd-QEU">
-                        <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mtkView contentMode="scaleToFill" colorPixelFormat="BGRA8Unorm" depthStencilPixelFormat="Depth32Float" translatesAutoresizingMaskIntoConstraints="NO" id="udY-9y-i5C">
-                                <rect key="frame" x="0.0" y="0.0" width="712" height="854"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="874"/>
                             </mtkView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SJi-da-3oh">
-                                <rect key="frame" x="48" y="904" width="616" height="31"/>
+                                <rect key="frame" x="48" y="924" width="1270" height="31"/>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
