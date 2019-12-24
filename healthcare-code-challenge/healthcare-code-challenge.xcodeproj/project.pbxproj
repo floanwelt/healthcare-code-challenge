@@ -15,6 +15,9 @@
 		17D17AE223B01DE200537265 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D17AE023B01DE200537265 /* LaunchScreen.storyboard */; };
 		17D17AED23B01DE200537265 /* healthcare_code_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D17AEC23B01DE200537265 /* healthcare_code_challengeTests.swift */; };
 		17D17AF823B01DE200537265 /* healthcare_code_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D17AF723B01DE200537265 /* healthcare_code_challengeUITests.swift */; };
+		A398CA096BC6D3C861E040D7 /* Pods_healthcare_code_challenge_healthcare_code_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB1A281E2E5989C8B1D3BD8 /* Pods_healthcare_code_challenge_healthcare_code_challengeUITests.framework */; };
+		D003676DF5DCF0BA406780CD /* Pods_healthcare_code_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78C5B3B671D6CE06AE134A6 /* Pods_healthcare_code_challenge.framework */; };
+		DC4754DC67300BBF90049095 /* Pods_healthcare_code_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21DD9690907D146DE82D89A8 /* Pods_healthcare_code_challengeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		161E8BC8C8FFC67F1449D22F /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthcare-code-challenge-healthcare-code-challengeUITests.release.xcconfig"; path = "Target Support Files/Pods-healthcare-code-challenge-healthcare-code-challengeUITests/Pods-healthcare-code-challenge-healthcare-code-challengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		17D17AD223B01DE000537265 /* healthcare-code-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "healthcare-code-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D17AD523B01DE000537265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17D17AD723B01DE000537265 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 		17D17AF323B01DE200537265 /* healthcare-code-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "healthcare-code-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D17AF723B01DE200537265 /* healthcare_code_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthcare_code_challengeUITests.swift; sourceTree = "<group>"; };
 		17D17AF923B01DE200537265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21DD9690907D146DE82D89A8 /* Pods_healthcare_code_challengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_healthcare_code_challengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4677F1053D2DBC40336B1D32 /* Pods-healthcare-code-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthcare-code-challengeTests.debug.xcconfig"; path = "Target Support Files/Pods-healthcare-code-challengeTests/Pods-healthcare-code-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E1873BE17E99CA1C348863B /* Pods-healthcare-code-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthcare-code-challenge.release.xcconfig"; path = "Target Support Files/Pods-healthcare-code-challenge/Pods-healthcare-code-challenge.release.xcconfig"; sourceTree = "<group>"; };
+		65D1753CA9B4F32B3D0DD7DE /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthcare-code-challenge-healthcare-code-challengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-healthcare-code-challenge-healthcare-code-challengeUITests/Pods-healthcare-code-challenge-healthcare-code-challengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD5DFB84C2741F3C5769E8BC /* Pods-healthcare-code-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthcare-code-challengeTests.release.xcconfig"; path = "Target Support Files/Pods-healthcare-code-challengeTests/Pods-healthcare-code-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		C78C5B3B671D6CE06AE134A6 /* Pods_healthcare_code_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_healthcare_code_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8EB714B97A8E0459380FABB /* Pods-healthcare-code-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthcare-code-challenge.debug.xcconfig"; path = "Target Support Files/Pods-healthcare-code-challenge/Pods-healthcare-code-challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		CFB1A281E2E5989C8B1D3BD8 /* Pods_healthcare_code_challenge_healthcare_code_challengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_healthcare_code_challenge_healthcare_code_challengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D003676DF5DCF0BA406780CD /* Pods_healthcare_code_challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4754DC67300BBF90049095 /* Pods_healthcare_code_challengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A398CA096BC6D3C861E040D7 /* Pods_healthcare_code_challenge_healthcare_code_challengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03E78AA97F2E3664AD4E4D5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8EB714B97A8E0459380FABB /* Pods-healthcare-code-challenge.debug.xcconfig */,
+				4E1873BE17E99CA1C348863B /* Pods-healthcare-code-challenge.release.xcconfig */,
+				65D1753CA9B4F32B3D0DD7DE /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests.debug.xcconfig */,
+				161E8BC8C8FFC67F1449D22F /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests.release.xcconfig */,
+				4677F1053D2DBC40336B1D32 /* Pods-healthcare-code-challengeTests.debug.xcconfig */,
+				BD5DFB84C2741F3C5769E8BC /* Pods-healthcare-code-challengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		17D17AC923B01DE000537265 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +112,8 @@
 				17D17AEB23B01DE200537265 /* healthcare-code-challengeTests */,
 				17D17AF623B01DE200537265 /* healthcare-code-challengeUITests */,
 				17D17AD323B01DE000537265 /* Products */,
+				03E78AA97F2E3664AD4E4D5E /* Pods */,
+				BD24FCF21CC665B65B65876E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +159,16 @@
 			path = "healthcare-code-challengeUITests";
 			sourceTree = "<group>";
 		};
+		BD24FCF21CC665B65B65876E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C78C5B3B671D6CE06AE134A6 /* Pods_healthcare_code_challenge.framework */,
+				CFB1A281E2E5989C8B1D3BD8 /* Pods_healthcare_code_challenge_healthcare_code_challengeUITests.framework */,
+				21DD9690907D146DE82D89A8 /* Pods_healthcare_code_challengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17D17AFC23B01DE200537265 /* Build configuration list for PBXNativeTarget "healthcare-code-challenge" */;
 			buildPhases = (
+				6C373B93A1572E11EE2563AD /* [CP] Check Pods Manifest.lock */,
 				17D17ACE23B01DE000537265 /* Sources */,
 				17D17ACF23B01DE000537265 /* Frameworks */,
 				17D17AD023B01DE000537265 /* Resources */,
+				B6E0F2088E8C77BEAA8F1AD3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17D17AFF23B01DE200537265 /* Build configuration list for PBXNativeTarget "healthcare-code-challengeTests" */;
 			buildPhases = (
+				BDD5ECCD80D5EE1F64563FC9 /* [CP] Check Pods Manifest.lock */,
 				17D17AE423B01DE200537265 /* Sources */,
 				17D17AE523B01DE200537265 /* Frameworks */,
 				17D17AE623B01DE200537265 /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17D17B0223B01DE200537265 /* Build configuration list for PBXNativeTarget "healthcare-code-challengeUITests" */;
 			buildPhases = (
+				1C83457E5CB084BBC0690966 /* [CP] Check Pods Manifest.lock */,
 				17D17AEF23B01DE200537265 /* Sources */,
 				17D17AF023B01DE200537265 /* Frameworks */,
 				17D17AF123B01DE200537265 /* Resources */,
+				F866699DD09F40F8B36E4236 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +299,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C83457E5CB084BBC0690966 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-healthcare-code-challenge-healthcare-code-challengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C373B93A1572E11EE2563AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-healthcare-code-challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6E0F2088E8C77BEAA8F1AD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-healthcare-code-challenge/Pods-healthcare-code-challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-healthcare-code-challenge/Pods-healthcare-code-challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-healthcare-code-challenge/Pods-healthcare-code-challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDD5ECCD80D5EE1F64563FC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-healthcare-code-challengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F866699DD09F40F8B36E4236 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-healthcare-code-challenge-healthcare-code-challengeUITests/Pods-healthcare-code-challenge-healthcare-code-challengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-healthcare-code-challenge-healthcare-code-challengeUITests/Pods-healthcare-code-challenge-healthcare-code-challengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-healthcare-code-challenge-healthcare-code-challengeUITests/Pods-healthcare-code-challenge-healthcare-code-challengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		17D17ACE23B01DE000537265 /* Sources */ = {
@@ -432,11 +581,13 @@
 		};
 		17D17AFD23B01DE200537265 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8EB714B97A8E0459380FABB /* Pods-healthcare-code-challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7U97535AXJ;
 				INFOPLIST_FILE = "healthcare-code-challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +601,13 @@
 		};
 		17D17AFE23B01DE200537265 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E1873BE17E99CA1C348863B /* Pods-healthcare-code-challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7U97535AXJ;
 				INFOPLIST_FILE = "healthcare-code-challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,6 +621,7 @@
 		};
 		17D17B0023B01DE200537265 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4677F1053D2DBC40336B1D32 /* Pods-healthcare-code-challengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +644,7 @@
 		};
 		17D17B0123B01DE200537265 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD5DFB84C2741F3C5769E8BC /* Pods-healthcare-code-challengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +667,7 @@
 		};
 		17D17B0323B01DE200537265 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65D1753CA9B4F32B3D0DD7DE /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +688,7 @@
 		};
 		17D17B0423B01DE200537265 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 161E8BC8C8FFC67F1449D22F /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
