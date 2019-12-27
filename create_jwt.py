@@ -20,5 +20,5 @@ payload = {'iss': ISS,
 additional_headers = {'kid': PRIVATE_KEY_ID_FROM_JSON}
 signed_jwt = jwt.encode(payload, PRIVATE_KEY_FROM_JSON, headers=additional_headers,
                                   algorithm='RS256')
-signed_jwt = signed_jwt..decode('ascii')
+signed_jwt = signed_jwt.decode('ascii')
 print(signed_jwt)
