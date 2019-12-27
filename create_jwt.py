@@ -1,4 +1,5 @@
 import time
+
 import jwt
 
 from service_account_credentials import (
@@ -9,8 +10,9 @@ from service_account_credentials import (
     AUD
 )
 
+
 iat = time.time()
-exp = iat + 1209600  # Valid for 14 days
+exp = iat + 3600  # Valid for 1 hour - Seems to be the maximum allowed
 payload = {'iss': ISS,
            'sub': SUB,
            'aud': AUD,
