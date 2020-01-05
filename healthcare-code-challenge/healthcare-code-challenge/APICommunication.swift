@@ -13,6 +13,7 @@ struct RawServerResponse: Decodable {
         case studyUID = "0020000D"
         case seriesUID = "0020000E"
         case instanceUID = "00080018"
+        case instanceNumber = "00200013"
     }
     
     struct StudyUID: Decodable {
@@ -26,16 +27,22 @@ struct RawServerResponse: Decodable {
     struct InstanceUID: Decodable {
         var Value: [String]
     }
-    
+
+    struct InstanceNumber: Decodable {
+        var Value: [Int]
+    }
+
     var studyUID: StudyUID
     var seriesUID: SeriesUID
     var instanceUID: InstanceUID
+    var instanceNumber: InstanceNumber
 }
 
 struct StudyMetaData: Decodable{
     var studyUID: String
     var seriesUID: String
     var instanceUID: String
+    var instanceNumber: Int
     
     init(from decoder: Decoder) throws {
         let rawResponse = try RawServerResponse(from: decoder)
@@ -43,6 +50,7 @@ struct StudyMetaData: Decodable{
         studyUID = rawResponse.studyUID.Value[0]
         seriesUID = rawResponse.seriesUID.Value[0]
         instanceUID = rawResponse.instanceUID.Value[0]
+        instanceNumber = rawResponse.instanceNumber.Value[0]
     }
 }
 
