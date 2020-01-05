@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IqL-Oa-44d">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="healthcare_code_challenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="healthcare_code_challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Portal to second view"/>
                                 <connections>
-                                    <segue destination="Q7X-T7-oLj" kind="presentation" modalPresentationStyle="fullScreen" id="Vlw-Tr-Pvb"/>
+                                    <segue destination="Q7X-T7-oLj" kind="show" id="Ycm-7L-qVf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -31,44 +31,79 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="1ph-C4-C0A">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="bAY-wk-wRH"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="86" y="127"/>
+            <point key="canvasLocation" x="2863.3967789165445" y="126.56249999999999"/>
         </scene>
-        <!--View Controller-->
+        <!--DICOM-View-->
         <scene sceneID="rGp-YD-vF9">
             <objects>
-                <viewController id="Q7X-T7-oLj" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Q7X-T7-oLj" customClass="DICOMViewController" customModule="healthcare_code_challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7qh-Yd-QEU">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mtkView contentMode="scaleToFill" colorPixelFormat="BGRA8Unorm" depthStencilPixelFormat="Depth32Float" translatesAutoresizingMaskIntoConstraints="NO" id="udY-9y-i5C">
-                                <rect key="frame" x="0.0" y="0.0" width="1366" height="874"/>
-                            </mtkView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SJi-da-3oh">
-                                <rect key="frame" x="48" y="924" width="1270" height="31"/>
+                                <rect key="frame" x="48" y="954" width="1270" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QC4-Q8-Tde"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="moveSlider:" destination="Q7X-T7-oLj" eventType="valueChanged" id="rHx-H0-c5w"/>
+                                </connections>
                             </slider>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qsx-7S-Dbs">
+                                <rect key="frame" x="0.0" y="70" width="1366" height="864"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ZfY-Cw-FNB" firstAttribute="trailing" secondItem="udY-9y-i5C" secondAttribute="trailing" id="7U6-oc-7hK"/>
-                            <constraint firstItem="udY-9y-i5C" firstAttribute="leading" secondItem="ZfY-Cw-FNB" secondAttribute="leading" id="G7S-63-zph"/>
+                            <constraint firstItem="ZfY-Cw-FNB" firstAttribute="trailing" secondItem="qsx-7S-Dbs" secondAttribute="trailing" id="COs-lV-8z7"/>
                             <constraint firstItem="SJi-da-3oh" firstAttribute="leading" secondItem="ZfY-Cw-FNB" secondAttribute="leading" constant="50" id="MU4-Yy-tfq"/>
+                            <constraint firstItem="SJi-da-3oh" firstAttribute="top" secondItem="qsx-7S-Dbs" secondAttribute="bottom" constant="20" id="SWL-5w-zme"/>
+                            <constraint firstItem="qsx-7S-Dbs" firstAttribute="leading" secondItem="ZfY-Cw-FNB" secondAttribute="leading" id="dDu-gX-AvL"/>
                             <constraint firstItem="ZfY-Cw-FNB" firstAttribute="trailing" secondItem="SJi-da-3oh" secondAttribute="trailing" constant="50" id="jZO-JX-BpJ"/>
-                            <constraint firstItem="ZfY-Cw-FNB" firstAttribute="bottom" secondItem="SJi-da-3oh" secondAttribute="bottom" constant="50" id="k0A-sR-e3W"/>
+                            <constraint firstItem="ZfY-Cw-FNB" firstAttribute="bottom" secondItem="SJi-da-3oh" secondAttribute="bottom" constant="20" id="k0A-sR-e3W"/>
                             <constraint firstItem="SJi-da-3oh" firstAttribute="centerX" secondItem="7qh-Yd-QEU" secondAttribute="centerX" id="ojA-FJ-xHp"/>
-                            <constraint firstItem="SJi-da-3oh" firstAttribute="top" secondItem="udY-9y-i5C" secondAttribute="bottom" constant="50" id="pQY-d2-F4E"/>
-                            <constraint firstItem="udY-9y-i5C" firstAttribute="top" secondItem="ZfY-Cw-FNB" secondAttribute="top" id="wwY-nN-q16"/>
+                            <constraint firstItem="qsx-7S-Dbs" firstAttribute="top" secondItem="ZfY-Cw-FNB" secondAttribute="top" constant="20" id="oqZ-UL-2ji"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZfY-Cw-FNB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3VZ-Oa-cjh"/>
+                    <navigationItem key="navigationItem" title="DICOM-View" largeTitleDisplayMode="always" id="24k-5A-y1R">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="4FP-MW-3j1"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="dicomImageView" destination="qsx-7S-Dbs" id="P7Z-yz-xsp"/>
+                        <outlet property="slider" destination="SJi-da-3oh" id="Fl1-6j-qZw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tBM-fX-hhg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="820" y="127"/>
+            <point key="canvasLocation" x="3560" y="127"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0V7-B4-YJ0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IqL-Oa-44d" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Klz-2U-Hyz"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0N0-Bt-DTL">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mrt-B7-A2p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dia-21-6fz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2169.399707174231" y="126.56249999999999"/>
         </scene>
     </scenes>
 </document>
