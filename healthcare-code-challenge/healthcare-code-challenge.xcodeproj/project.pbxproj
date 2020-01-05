@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1703E5F423B8F4300005FF8A /* libimebra.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1703E5F323B8F4300005FF8A /* libimebra.a */; };
+		1703E5F623B8F7F70005FF8A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1703E5F523B8F7F70005FF8A /* Utils.swift */; };
+		1703E5F823B8F9C30005FF8A /* DICOMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1703E5F723B8F9C30005FF8A /* DICOMViewController.swift */; };
+		175E87B623C25885005117B0 /* APICommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E87B523C25885005117B0 /* APICommunication.swift */; };
+		175E87B823C25BAA005117B0 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E87B723C25BAA005117B0 /* ConnectionManager.swift */; };
+		175E87BA23C2670A005117B0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E87B923C2670A005117B0 /* DataManager.swift */; };
+		17A3B82E23B8EB2800C1339D /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A3B82D23B8EB2800C1339D /* libiconv.tbd */; };
+		17A3B83223B8EB5E00C1339D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A3B83123B8EB5E00C1339D /* libc++.tbd */; };
 		17D17AD623B01DE000537265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D17AD523B01DE000537265 /* AppDelegate.swift */; };
 		17D17AD823B01DE000537265 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D17AD723B01DE000537265 /* SceneDelegate.swift */; };
 		17D17ADA23B01DE000537265 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D17AD923B01DE000537265 /* ViewController.swift */; };
@@ -35,6 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1703E5F123B8F4210005FF8A /* imebra_ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = imebra_ios; path = "healthcare-code-challenge/imebra_ios"; sourceTree = "<group>"; };
+		1703E5F323B8F4300005FF8A /* libimebra.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libimebra.a; path = "healthcare-code-challenge/imebra_ios/libimebra.a"; sourceTree = "<group>"; };
+		1703E5F523B8F7F70005FF8A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1703E5F723B8F9C30005FF8A /* DICOMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DICOMViewController.swift; sourceTree = "<group>"; };
+		175E87B523C25885005117B0 /* APICommunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICommunication.swift; sourceTree = "<group>"; };
+		175E87B723C25BAA005117B0 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		175E87B923C2670A005117B0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		17A3B82D23B8EB2800C1339D /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		17A3B82F23B8EB4800C1339D /* libimebra.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libimebra.a; path = ../imebra_ios/libimebra.a; sourceTree = "<group>"; };
+		17A3B83123B8EB5E00C1339D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		17D17AD223B01DE000537265 /* healthcare-code-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "healthcare-code-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D17AD523B01DE000537265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17D17AD723B01DE000537265 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1703E5F423B8F4300005FF8A /* libimebra.a in Frameworks */,
+				17A3B83223B8EB5E00C1339D /* libc++.tbd in Frameworks */,
+				17A3B82E23B8EB2800C1339D /* libiconv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +136,11 @@
 				17D17ADE23B01DE200537265 /* Assets.xcassets */,
 				17D17AE023B01DE200537265 /* LaunchScreen.storyboard */,
 				17D17AE323B01DE200537265 /* Info.plist */,
+				1703E5F523B8F7F70005FF8A /* Utils.swift */,
+				1703E5F723B8F9C30005FF8A /* DICOMViewController.swift */,
+				175E87B523C25885005117B0 /* APICommunication.swift */,
+				175E87B723C25BAA005117B0 /* ConnectionManager.swift */,
+				175E87B923C2670A005117B0 /* DataManager.swift */,
 			);
 			path = "healthcare-code-challenge";
 			sourceTree = "<group>";
@@ -140,6 +166,11 @@
 		BD24FCF21CC665B65B65876E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1703E5F323B8F4300005FF8A /* libimebra.a */,
+				1703E5F123B8F4210005FF8A /* imebra_ios */,
+				17A3B83123B8EB5E00C1339D /* libc++.tbd */,
+				17A3B82F23B8EB4800C1339D /* libimebra.a */,
+				17A3B82D23B8EB2800C1339D /* libiconv.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -342,9 +373,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1703E5F823B8F9C30005FF8A /* DICOMViewController.swift in Sources */,
+				175E87BA23C2670A005117B0 /* DataManager.swift in Sources */,
 				17D17ADA23B01DE000537265 /* ViewController.swift in Sources */,
 				17D17AD623B01DE000537265 /* AppDelegate.swift in Sources */,
+				175E87B823C25BAA005117B0 /* ConnectionManager.swift in Sources */,
 				17D17AD823B01DE000537265 /* SceneDelegate.swift in Sources */,
+				1703E5F623B8F7F70005FF8A /* Utils.swift in Sources */,
+				175E87B623C25885005117B0 /* APICommunication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,8 +561,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/healthcare-code-challenge/imebra_ios",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = "healthcare-code-challenge/imebra_ios/**";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.florianabel.healthcare-code-challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "healthcare-code-challenge/imebra_5_0_1_1/wrappers/objectivec/include/imebraobjc/imebra_swift.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -544,8 +586,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/healthcare-code-challenge/imebra_ios",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.florianabel.healthcare-code-challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "healthcare-code-challenge/imebra_5_0_1_1/wrappers/objectivec/include/imebraobjc/imebra_swift.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
