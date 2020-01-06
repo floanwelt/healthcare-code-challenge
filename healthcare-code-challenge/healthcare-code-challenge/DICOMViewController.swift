@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DICOMViewController: UIViewController {
+class DICOMViewController: UIViewController, dataInteraction {
 
     @IBAction func moveSlider(_ sender: UISlider) {
         let currentValue = Int(sender.value)
@@ -24,16 +24,25 @@ class DICOMViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        DataManager.shared.setDelegate(self)
+        if DataManager.shared.finishedLoading {
+            setupView()
+        }
+    }
+
+    func setupView() {
         let MINIMUM_VALUE = Float(DataManager.shared.studyInstances.keys.min()!)
         let MAXIMUM_VALUE = Float(DataManager.shared.studyInstances.keys.max()!)
-        slider.minimumValue = MINIMUM_VALUE
-        slider.maximumValue = MAXIMUM_VALUE
-        slider.value = MINIMUM_VALUE
+        DispatchQueue.main.async {
+            self.slider.minimumValue = MINIMUM_VALUE
+            self.slider.maximumValue = MAXIMUM_VALUE
+            self.slider.value = MINIMUM_VALUE
+        }
         if let data = DataManager.shared.studyInstances[Int(MINIMUM_VALUE)] {
             setImage(image: self.loadWSI(data: data)!)
         }
     }
-
+    
     func setImage(image: UIImage) {
         DispatchQueue.main.async {
            self.dicomImageView.image = image
@@ -70,11 +79,13 @@ class DICOMViewController: UIViewController {
             let width = image.width
             let height = image.height
                         
-            let chain = Utils.applyTransformation(colorSpace: colorSpace,
-                                                  dataSet: dataSet,
-                                                  image: image,
-                                                  width: width,
-                                                  height: height)
+            let chain = Utils.applyTransformation(
+                colorSpace: colorSpace,
+                dataSet: dataSet,
+                image: image,
+                width: width,
+                height: height
+            )
 
             return Utils.generateImage(chain: chain!, image: image)
  
@@ -83,14 +94,4 @@ class DICOMViewController: UIViewController {
             return UIImage()
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

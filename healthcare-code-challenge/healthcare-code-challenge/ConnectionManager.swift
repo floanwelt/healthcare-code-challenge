@@ -11,7 +11,7 @@ import Foundation
 class ConnectionManager {
     static let shared = ConnectionManager()
     
-    private let authString: String = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImMyMWQxYWJjNWVjMGZiYTA0OWQ3OTE2ZTllZDkyOTJhNjE4ODQ5MzkifQ.eyJpc3MiOiJ0ZWNoLWNoYWxsZW5nZS1hcHBAY2hhcmlzbWF0aWMtdGVhLTI2MjIxMy5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInN1YiI6InRlY2gtY2hhbGxlbmdlLWFwcEBjaGFyaXNtYXRpYy10ZWEtMjYyMjEzLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9oZWFsdGhjYXJlLmdvb2dsZWFwaXMuY29tLyIsImlhdCI6MTU3ODI1NzU1MC42ODk4OTcsImV4cCI6MTU3ODI2MTE1MC42ODk4OTd9.TcCwjYFzCg_BmxxP2e-b_Mq_HRyaRkN7dCcNI9ChAkV4Nx3YcassPNHqGmGzDUeW95EatdItmWXkirFpxp_hIRa2YCa4chlale2idRU91-3zZKsGqfEgqfRXlfMDBv_NIBW3Wmw7U15u8z0Rxku3s309Q791s-6Q6V4m7RCJd4gtgMbkI7m2Y5kAFLwOQAoFfdF9XSN85cw4SpfU874sQHGNR8CX380D4BvjQ3Zw8jAkZ8wUekG27QnQw6JmHQsFEacnncIovMoFAO17En9WWTF-mDk_y2Rw_RTtjsga1y0V1MsPTbZVDbRknGuawlbpSCaMLCARbh3sr-w7SXOM-Q"
+    private let authString: String = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImMyMWQxYWJjNWVjMGZiYTA0OWQ3OTE2ZTllZDkyOTJhNjE4ODQ5MzkifQ.eyJpc3MiOiJ0ZWNoLWNoYWxsZW5nZS1hcHBAY2hhcmlzbWF0aWMtdGVhLTI2MjIxMy5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInN1YiI6InRlY2gtY2hhbGxlbmdlLWFwcEBjaGFyaXNtYXRpYy10ZWEtMjYyMjEzLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9oZWFsdGhjYXJlLmdvb2dsZWFwaXMuY29tLyIsImlhdCI6MTU3ODI2Nzk4My4wMDE4MjIsImV4cCI6MTU3ODI3MTU4My4wMDE4MjJ9.iOJ_2bsSzf4UDHAsGwacNihHMw_7zB9XH64BeyJDh3xfiiEFcEo9jip7lTLBCxBoVVZcJRgb1QUP8FrkyUczsze30iWFX-XAlvyypjVokccsXHy-o664QViHo2dH9cXUxSVIydrxcqp1b6fXMZaf0hDEkRRi8noMfcp2Px3MppCyDglXSWESIUYwp4TXUsjKJ7GsunxWByukq4rIbsYMntofyvTpkBdGWiofD5UB-o75EfVK10E1tCzxFYUxjyDRVePUPZJuXKTvGCBn6dwX46B72CZm7kN2GRs7MmOoSdkVuAhPfKYLLLKBk_qK7bHpX_1qrCVWLeVht9CG0HTssQ"
     
      private let studyMetaDataEndpoint: URL = URL(string: "https://healthcare.googleapis.com/v1beta1/projects/charismatic-tea-262213/locations/europe-west2/datasets/med_tech_challenge/dicomStores/tech_challenge_dicom_store/dicomWeb/instances?StudyInstanceUID=1.2.392.100224.1.1210.3722113121538292546519015974142145381201")!
     
@@ -30,7 +30,6 @@ class ConnectionManager {
             }
             do {
                 let response = try JSONDecoder().decode([StudyMetaData].self, from: jsonData)
-                print(response)
                 completion(.success(response))
             } catch let error {
                 print(error)

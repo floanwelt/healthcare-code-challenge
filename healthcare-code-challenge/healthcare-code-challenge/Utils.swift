@@ -19,23 +19,23 @@ class Utils {
         }
     }
     
-    static func applyTransformation(colorSpace: String?,
-                                    dataSet: ImebraDataSet,
-                                    image: ImebraImage,
-                                    width: UInt32,
-                                    height: UInt32) -> ImebraTransformsChain? {
-        let chain = ImebraTransformsChain()
-        do {
-            if(ImebraColorTransformsFactory.isMonochrome(colorSpace)) {
-
-                let voiDescription = try ImebraVOILUT.getOptimalVOI(image, inputTopLeftX: 0, inputTopLeftY: 0, inputWidth: width, inputHeight: height)
-                let voilutTransform = ImebraVOILUT(voiDescription: voiDescription)
-                chain?.add(voilutTransform)
+    static func applyTransformation(
+        colorSpace: String?,
+        dataSet: ImebraDataSet,
+        image: ImebraImage,
+        width: UInt32,
+        height: UInt32) -> ImebraTransformsChain? {
+            let chain = ImebraTransformsChain()
+            do {
+                if(ImebraColorTransformsFactory.isMonochrome(colorSpace)) {
+                    let voiDescription = try ImebraVOILUT.getOptimalVOI(
+                        image, inputTopLeftX: 0, inputTopLeftY: 0, inputWidth: width, inputHeight: height)
+                    let voilutTransform = ImebraVOILUT(voiDescription: voiDescription)
+                    chain?.add(voilutTransform)
+                }
+            } catch {
+                print("Error occured")
             }
-        } catch {
-            print("Error occured")
+            return chain
         }
-        return chain
-    }
-    
 }
