@@ -12,7 +12,7 @@
 ## Start App in the iPad Simulator
 1. I had been running it on an ipad air 3rd generation simulator, but should also run on other simulators
 !!! Will most likely not run on a device as another compilation of imebra needs to be used for that accroding to the docs !!!
-2. After startup give the app a few seconds to connect to the API and download the data, otherwise it might throw an error when trying to access the image data (Will fix that in the final polish).
+2. After startup it may take a few seconds to connect to the API and download the data (Save to enter second view before data is downloaded since the last fix)
 3. Push the button to get to the image view and enjoy your view of the DICOM images
 4. Use the slider to play around
 
