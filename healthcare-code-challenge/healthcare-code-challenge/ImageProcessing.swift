@@ -83,7 +83,7 @@ class ImageProcessing {
     }
     
     
-    func imebraUIImageToPixelsToUIImage() {
+    func imebraUIImageToPixelsToUIImage() -> UIImage?{
         if let dicm = DataManager.shared.studyInstances[200] {
             let image = Utils.loadWSI(data: dicm)
             let cgImage = image?.cgImage
@@ -105,9 +105,10 @@ class ImageProcessing {
             let (pixels, width, height) = ImageProcessing.pixelValues(fromCGImage: cgImage)
             print(pixels!.prefix(100))
             let newImage = ImageProcessing.imageFunc(fromPixelValues: pixels, width: width, height: height)
-    //        setImage(image: UIImage(cgImage: newImage!))
             
+            return UIImage(cgImage: newImage!)
         }
+        return nil
     }
 
 
@@ -173,25 +174,9 @@ class ImageProcessing {
                                 print("Pixel Data")
                                 print(pixel_data_raw)
                             
-        //                    var blub = NSBitmapImageRep(bitmapDataPlanes: nil,
-        //                    pixelsWide: Int(100),
-        //                    pixelsHigh: Int(100),
-        //                    bitsPerSample: 8,
-        //                    samplesPerPixel: 3,
-        //                    hasAlpha: false,
-        //                    isPlanar: false,
-        //                    colorSpaceName: NSCalibratedRGBColorSpace,
-        //                    bytesPerRow: 0, bitsPerPixel: 0)!
-                            
-        //                    let width  = Int(pixel_data_raw[1]) | Int(pixel_data_raw[0]) << 16
-        //                    let height = Int(pixel_data_raw[3]) | Int(pixel_data_raw[2]) << 16
                             let width = 512
                             let height = 512
-                            print(width)
-                            print(height)
-                            
                             let colorSpace = CGColorSpaceCreateDeviceGray()
-                            print(colorSpace)
                             
                             let bitmapContext = CGContext(
                                 data: nil,
@@ -202,6 +187,7 @@ class ImageProcessing {
                                 space: colorSpace,
                                 bitmapInfo: CGImageAlphaInfo.alphaOnly.rawValue
                             )
+                            
                             print("bitmapinfo")
                             print(CGImageAlphaInfo.alphaOnly.rawValue)
                             print("BitmapContext")
@@ -237,8 +223,6 @@ class ImageProcessing {
         //                    let image_data = CIImage(bitmapData: pixel_data_raw, bytesPerRow: 1024, size: CGSize(width: 512, height: 512), format: CIFormat.A16, colorSpace: CGColorSpace.linearGray as! CGColorSpace)
                             let image = UIImage(cgImage: cgImage!)
                             
-    //                        setImage(image: image)
-
                         }
                         print("Image set?!")
                     } catch {
