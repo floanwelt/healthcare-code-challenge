@@ -1,0 +1,6 @@
+framework module DCDicom {
+  umbrella header "DCDicom-umbrella.h"
+
+  export *
+  module * { export * }
+}

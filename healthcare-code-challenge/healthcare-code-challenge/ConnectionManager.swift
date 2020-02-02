@@ -8,10 +8,17 @@
 
 import Foundation
 
+enum APIError: Error {
+    case responseProblem
+    case decodingProblem
+    case encodingProblem
+    case otherProblem
+}
+
 class ConnectionManager {
     static let shared = ConnectionManager()
     
-    private let authString: String = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImMyMWQxYWJjNWVjMGZiYTA0OWQ3OTE2ZTllZDkyOTJhNjE4ODQ5MzkifQ.eyJpc3MiOiJ0ZWNoLWNoYWxsZW5nZS1hcHBAY2hhcmlzbWF0aWMtdGVhLTI2MjIxMy5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInN1YiI6InRlY2gtY2hhbGxlbmdlLWFwcEBjaGFyaXNtYXRpYy10ZWEtMjYyMjEzLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9oZWFsdGhjYXJlLmdvb2dsZWFwaXMuY29tLyIsImlhdCI6MTU3ODI2Nzk4My4wMDE4MjIsImV4cCI6MTU3ODI3MTU4My4wMDE4MjJ9.iOJ_2bsSzf4UDHAsGwacNihHMw_7zB9XH64BeyJDh3xfiiEFcEo9jip7lTLBCxBoVVZcJRgb1QUP8FrkyUczsze30iWFX-XAlvyypjVokccsXHy-o664QViHo2dH9cXUxSVIydrxcqp1b6fXMZaf0hDEkRRi8noMfcp2Px3MppCyDglXSWESIUYwp4TXUsjKJ7GsunxWByukq4rIbsYMntofyvTpkBdGWiofD5UB-o75EfVK10E1tCzxFYUxjyDRVePUPZJuXKTvGCBn6dwX46B72CZm7kN2GRs7MmOoSdkVuAhPfKYLLLKBk_qK7bHpX_1qrCVWLeVht9CG0HTssQ"
+    private let authString: String = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImMyMWQxYWJjNWVjMGZiYTA0OWQ3OTE2ZTllZDkyOTJhNjE4ODQ5MzkifQ.eyJpc3MiOiJ0ZWNoLWNoYWxsZW5nZS1hcHBAY2hhcmlzbWF0aWMtdGVhLTI2MjIxMy5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInN1YiI6InRlY2gtY2hhbGxlbmdlLWFwcEBjaGFyaXNtYXRpYy10ZWEtMjYyMjEzLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9oZWFsdGhjYXJlLmdvb2dsZWFwaXMuY29tLyIsImlhdCI6MTU4MDY0MTcyMC4zNjkxNzMsImV4cCI6MTU4MDY0NTMyMC4zNjkxNzN9.RlM5_dSD--CAwD5CiYWTYdG0QnqdVG8k0pDvxMAUlUFMDvs1R8CaNcxzS3IkdQ3wIttBeZEhhxcpqZhtbkmv2Qth5znW7Yy05xIfGJLCwDZ5iZ4ZX1mIvfYvQ7YS9H9mr6Gq4nmRK6YgJwJ5Y2cQXldfKsa7vDYxhhKdB_19kjtVqtK4IY-BLCkhlCG11eD24dk9hZwrIwRA3jigOkVOXJK1e3ZN2_TTa-vvCseB0Ng7llbl_gQZcstbZK_4HCoqR2OygmfjTV5LbQ5hsa7I4EouBmBvSNuEm--4o6FRk05lHyjEMjqnqZSV1WROzCKEj45kGFteyDrkW1NsLh9UWQ"
     
      private let studyMetaDataEndpoint: URL = URL(string: "https://healthcare.googleapis.com/v1beta1/projects/charismatic-tea-262213/locations/europe-west2/datasets/med_tech_challenge/dicomStores/tech_challenge_dicom_store/dicomWeb/instances?StudyInstanceUID=1.2.392.100224.1.1210.3722113121538292546519015974142145381201")!
     
@@ -52,7 +59,9 @@ class ConnectionManager {
                 completion(.failure(.responseProblem))
                 return
             }
-            completion(.success(data!))
-            }.resume()
+            if let data = data {
+                completion(.success(data))
+            }
+        }.resume()
     }
 }

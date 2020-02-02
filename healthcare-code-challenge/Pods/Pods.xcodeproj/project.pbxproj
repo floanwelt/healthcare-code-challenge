@@ -1,0 +1,1476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 243169D7A56C0468A9C10463619D018A /* Build configuration list for PBXAggregateTarget "TensorFlowLiteC" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = TensorFlowLiteC;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0E5E152461DD1F10C7F45CAC19F84B79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0E993296CF79F75FB6EA210A5AC531FD /* MetalDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D30BE365679C9946056036A2A5C58F /* MetalDelegate.swift */; };
+		160F21462D76A12ACFB00F30D8ADA2F6 /* DicomDataElementUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0867C8590F6DF79F9E8D555649F6A4D /* DicomDataElementUI.swift */; };
+		17735CAB10A38913E47338A1E1773113 /* Pods-healthcare-code-challenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CA84E2BFD3F1A0C6697D0CCB2BC1 /* Pods-healthcare-code-challenge-dummy.m */; };
+		17BF182CE0E81EFEBDBE10D57CED66D0 /* DicomDataElementSQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589682C4D2E608742B9F5B7FA0D8E5D9 /* DicomDataElementSQ.swift */; };
+		17D6786F6A2E9D902E5AE4AAC2739BEE /* DicomDataElementDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACDC740B078CF0C8E773F25D62F3C97 /* DicomDataElementDS.swift */; };
+		1E3CC1DF715135FF269CAF8B8511CD78 /* DicomDataElementIS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAB79160D1FEDCAFF30B250CC7971AC /* DicomDataElementIS.swift */; };
+		24FFF166A136D256BF8E619B75F794B6 /* DicomDataElementUS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699DB1CF248A5CD875DE02D53ED7762 /* DicomDataElementUS.swift */; };
+		2D0C2314BD59E54551BD4779A5D1DF37 /* DicomDataElementSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B95183334774DBD2B6FA13073B9D63 /* DicomDataElementSS.swift */; };
+		2F25EAEFDA725588E8DE52289E62B1AB /* DicomDataElementOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E857B2542A1119C1902CFEA4B979D3C /* DicomDataElementOD.swift */; };
+		30806718C80ACFD657320ADD85869F3A /* QuantizationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0122CAD6B8B12965947B0D68D26B53FE /* QuantizationParameters.swift */; };
+		368135B3A1C3747D2BEEC6B8121FE642 /* DicomDataElementUN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9295F5AC2E38508EA7078E1D20ADAB /* DicomDataElementUN.swift */; };
+		37FACB1D93205FF7BFF27C22EB10BF54 /* DicomDataElementOF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38F8306C8C4071FCAE9E1688484F695 /* DicomDataElementOF.swift */; };
+		3AED8060CBB976578651901AEFEA8442 /* DicomDataElementFD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5DCAC9AF22F0BA148E867A3A6A0AC5 /* DicomDataElementFD.swift */; };
+		3CD4FB0948702C2E3014C7D07EEF08AF /* DicomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370EE872094C1928C0D1E0AD9FB17B06 /* DicomError.swift */; };
+		3D9F9724BBF220DD9BD50D1F81C25E85 /* DicomTransferSyntax.json in Resources */ = {isa = PBXBuildFile; fileRef = 3844CE8487B313A3E58B98156C15FE13 /* DicomTransferSyntax.json */; };
+		405DB926AB8462D8F5F96C5576BD24F1 /* TensorFlowLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B4010EAE7C5215DA60E2EFB2030493 /* TensorFlowLite.swift */; };
+		412B61B1352CB9277715C547016657B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4F748E2112799562F3B2E910D6572F99 /* DicomDataElementOW.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0F88DBEE7EE9F867A265806304CCA2 /* DicomDataElementOW.swift */; };
+		4FF0E67DBBA8B1C5D7F4029A61A443A1 /* DicomDataElementOB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF238E85AE723A1051CDCD1970BE20E4 /* DicomDataElementOB.swift */; };
+		543FF82030477914A837718DB8A34F65 /* DicomDataElementAE.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F6BCFCFADB1C374558126ED81483E2 /* DicomDataElementAE.swift */; };
+		5EC70A11ACBE80A069B8AD8D3EF24044 /* DicomDataElementUR.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5356A24FA4C90077F68E2AE34B730F4 /* DicomDataElementUR.swift */; };
+		718DF2033B811EA1DB66D4EF20D5A611 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		73D334D63DC32F3987BF28439689CDB0 /* DicomDataElementUT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D481EC015B1436F0F33ADB6D91E9809 /* DicomDataElementUT.swift */; };
+		7959DF598DB15A3F2C50FF669EE80890 /* DicomDataElementSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEBD8AB2D5AAFDC821A4BABE7EF4C96 /* DicomDataElementSL.swift */; };
+		7D9F082BD9613295344E23C37851335F /* DicomDataElementAS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5985969A64BD98514128FF9A0FE2F1B /* DicomDataElementAS.swift */; };
+		7E88F275622810CE353DD7B7B37AEDA5 /* DicomDataElementDA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC79151AD3311FDF044213AED9A4537 /* DicomDataElementDA.swift */; };
+		80B5E8F0384983DFF506060B7916C41F /* DicomDataElementUL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F25AD016E21F79385DEADABD927F7 /* DicomDataElementUL.swift */; };
+		89AA3C20F56E771C5934B2DCAA379CC4 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD03E3A58D145E9B3BA8382B7EE594E /* Interpreter.swift */; };
+		8B48FA598A75200DB96E5E45B644089A /* DicomDataElementST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2246450DAA51A8FC6B9AFE9B4156D0 /* DicomDataElementST.swift */; };
+		8B6EC9BCD0AB41B9FD6DC9E6811D959B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8BFCEEDB3535BB78627F70ACCA6CD3F7 /* DicomDataElementLO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4257E800D132F03F51457BA716C0522 /* DicomDataElementLO.swift */; };
+		8CADB5CD8E54CB47B61E90FEF6A209DD /* DicomDataElementLT.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1039C4094B10F457032FC80FA3B355D /* DicomDataElementLT.swift */; };
+		8DA7D5FE089801A38D7226BB422A3AE9 /* TensorFlowLiteSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C35BB18C385CDAC9355B731BA7CEF5DF /* TensorFlowLiteSwift-dummy.m */; };
+		90636994299C4BA6CD9E51ABEB812C74 /* DicomTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9BC78E253AEC261C1C7E96E113152 /* DicomTag.swift */; };
+		96E2901463AD29A62FFA4B4067F61D84 /* Pods-healthcare-code-challengeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C64C548AA07E948310F3872CEF05CA /* Pods-healthcare-code-challengeTests-dummy.m */; };
+		9A9F123559A0671CCE25BB8D27F3608F /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 674F17D46E56428010342022BAE32306 /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-dummy.m */; };
+		9B114FE32AC17C783DC87EA275FBA39C /* DicomDataElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F27DB17F7869401063D6D28C88A6C /* DicomDataElement.swift */; };
+		9CC2B96AA1BAD174231D65496F5D4BD2 /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A8300F4DECC68D47813F4969E3ED5AD /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A454FDF0B554FE4081CD4AFE4900272B /* DCDicom-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3246A1EFED45563D4A8CED3639BA8B2C /* DCDicom-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A818157F99F2A2AC4F0F0BBF48E1D4E1 /* DicomDataElementDT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B2DB3530C975B51FED8608D2E89224 /* DicomDataElementDT.swift */; };
+		AE6594DD76FD8DAAC2AEB5953D9C4615 /* DicomDataElementOL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2EF23C6914FC8566AA885BD48CFD6 /* DicomDataElementOL.swift */; };
+		B24A22D0E5C91B2BBD0E0B4A43BBEEEC /* DicomDataElementTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC28A64C03C0ECF141529D19BB1780 /* DicomDataElementTM.swift */; };
+		B287E19D7C0AE3EBBCC976A2D28A2337 /* DCDicom-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0174E20D407189585C6296F0A9091AD0 /* DCDicom-dummy.m */; };
+		B30DFF9007000B08CA3613C616943724 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F8DF9AE44ED635A6F2C321C1E27C32 /* Delegate.swift */; };
+		B3C9685C9346C358EB48CD68D1ACEB6F /* DicomDataElementAT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5F83B7F557E40EAC8112EA237679F /* DicomDataElementAT.swift */; };
+		B4CDABD81CAD2F2287406F58F12242B0 /* TensorFlowLiteSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2CC1D43098AFF2A019AE948FC886FB9 /* TensorFlowLiteSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9BD81110588FF8EF267BD6647951BD4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD520C9AF842FD6420BB9F86945AC32F /* Model.swift */; };
+		BA4C7C03BEB561956A5FB7A40E35B13B /* DicomDataElementFL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF4517EF98A14D2ABC68FF4CAF1C8D3 /* DicomDataElementFL.swift */; };
+		BB252E9CA67FCAAD352F777576F14A23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BECEA75BC28D0A5EAD73B0A84D56B5A5 /* Pods-healthcare-code-challenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 606C1314082B37444005E3EC8F47D455 /* Pods-healthcare-code-challenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6D70DAF9AB45AA800DDB334619CDD07 /* DicomDataElementPN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF3AA4A59726952934B7E3608F5212 /* DicomDataElementPN.swift */; };
+		D0947EB66527FB85E6644256A62C2212 /* DicomDataElementUC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039BFEF052C2DD442839BDEC411B1AB0 /* DicomDataElementUC.swift */; };
+		D26CA37D99246B603996AD13F7CF0C31 /* DicomVR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C2743374725DDCD550D034D84541B /* DicomVR.swift */; };
+		E03911712FC552F9E8049E9EC48F0603 /* DicomObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785EA0311F217EEEBF28DB4C24AABB8E /* DicomObject.swift */; };
+		E3E7867BC07EE81FE465DABE242CF53E /* Pods-healthcare-code-challengeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A9339FAE7E7BE13642167A88C4FA9C /* Pods-healthcare-code-challengeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5AD9AD810C817160095941EB172D8CA /* DicomDataElementSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364DD2D62A19D3FB244D94FFDC76C284 /* DicomDataElementSH.swift */; };
+		E677E11481A8D892C303DCE89B807BA6 /* Tensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B4EC1C88540970A93778188FA251B8 /* Tensor.swift */; };
+		E7C1625A84A571BB707293D9BE465DC1 /* DicomDataElementCS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223098C6F4C28E1218D232593DA80C7F /* DicomDataElementCS.swift */; };
+		EE7899063120392B7E2BECDA0C8D3086 /* InterpreterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000C9AFAF7D165F0D7F757F0D4F4881F /* InterpreterError.swift */; };
+		F0F04691A993A3750A4DD0D6FD7D2D31 /* DicomTransferSyntax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562066B4565DB0FA85FAA5825815B93D /* DicomTransferSyntax.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2851460AC34A5973C06B9AF30F0ABFE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10418167F619D6DA72BADAD10F9EC02B;
+			remoteInfo = TensorFlowLiteSwift;
+		};
+		4EDEB2B3FA4A7A690C8F4A49A501D72D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10418167F619D6DA72BADAD10F9EC02B;
+			remoteInfo = TensorFlowLiteSwift;
+		};
+		62C4CD65D8FF64BA1ED10C95A6FED888 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
+			remoteInfo = TensorFlowLiteC;
+		};
+		81F3C372F5F10677378560C75C14CF32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73FE05AABC20C576A43A10EA1455A18A;
+			remoteInfo = DCDicom;
+		};
+		8E250659101E159A40CBD25462473F17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D865E1F59B319434B44645859C8C47B5;
+			remoteInfo = "Pods-healthcare-code-challenge";
+		};
+		9CD29C43799CE27402701E8FDBF5CACF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
+			remoteInfo = TensorFlowLiteC;
+		};
+		D26E06CD5A9004A91EE92E589BB505C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
+			remoteInfo = TensorFlowLiteC;
+		};
+		FF7DB3B60473606CC2379E330DC4D52C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73FE05AABC20C576A43A10EA1455A18A;
+			remoteInfo = DCDicom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000C9AFAF7D165F0D7F757F0D4F4881F /* InterpreterError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterpreterError.swift; path = tensorflow/lite/experimental/swift/Sources/InterpreterError.swift; sourceTree = "<group>"; };
+		0122CAD6B8B12965947B0D68D26B53FE /* QuantizationParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuantizationParameters.swift; path = tensorflow/lite/experimental/swift/Sources/QuantizationParameters.swift; sourceTree = "<group>"; };
+		0174E20D407189585C6296F0A9091AD0 /* DCDicom-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DCDicom-dummy.m"; sourceTree = "<group>"; };
+		039BFEF052C2DD442839BDEC411B1AB0 /* DicomDataElementUC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementUC.swift; path = "Sources/DICOM/Data Elements/Strings/DicomDataElementUC.swift"; sourceTree = "<group>"; };
+		04F11B032ADB23FF15F3FFD616DE5DE9 /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-healthcare-code-challenge-healthcare-code-challengeUITests-Info.plist"; sourceTree = "<group>"; };
+		06B95183334774DBD2B6FA13073B9D63 /* DicomDataElementSS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementSS.swift; path = "Sources/DICOM/Data Elements/Numbers/DicomDataElementSS.swift"; sourceTree = "<group>"; };
+		088F25AD016E21F79385DEADABD927F7 /* DicomDataElementUL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementUL.swift; path = "Sources/DICOM/Data Elements/Numbers/DicomDataElementUL.swift"; sourceTree = "<group>"; };
+		09F1CA84E2BFD3F1A0C6697D0CCB2BC1 /* Pods-healthcare-code-challenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-healthcare-code-challenge-dummy.m"; sourceTree = "<group>"; };
+		0C5DCAC9AF22F0BA148E867A3A6A0AC5 /* DicomDataElementFD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementFD.swift; path = "Sources/DICOM/Data Elements/Numbers/DicomDataElementFD.swift"; sourceTree = "<group>"; };
+		0D6BC2930119748DD393D90BF316B887 /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-healthcare-code-challenge-healthcare-code-challengeUITests.modulemap"; sourceTree = "<group>"; };
+		0E53CA7940BBD4E6A79D049C844B4766 /* Pods-healthcare-code-challenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-healthcare-code-challenge-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A8300F4DECC68D47813F4969E3ED5AD /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-healthcare-code-challenge-healthcare-code-challengeUITests-umbrella.h"; sourceTree = "<group>"; };
+		1CE5F83B7F557E40EAC8112EA237679F /* DicomDataElementAT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementAT.swift; path = "Sources/DICOM/Data Elements/Other/DicomDataElementAT.swift"; sourceTree = "<group>"; };
+		223098C6F4C28E1218D232593DA80C7F /* DicomDataElementCS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementCS.swift; path = "Sources/DICOM/Data Elements/Strings/DicomDataElementCS.swift"; sourceTree = "<group>"; };
+		244AEBFCF8E2785F27042B672060929E /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-healthcare-code-challenge-healthcare-code-challengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2AEC695324D7BFB4BDADD4B00A54EB53 /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-healthcare-code-challenge-healthcare-code-challengeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2D481EC015B1436F0F33ADB6D91E9809 /* DicomDataElementUT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementUT.swift; path = "Sources/DICOM/Data Elements/Strings/DicomDataElementUT.swift"; sourceTree = "<group>"; };
+		2E857B2542A1119C1902CFEA4B979D3C /* DicomDataElementOD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementOD.swift; path = "Sources/DICOM/Data Elements/Other/DicomDataElementOD.swift"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3246A1EFED45563D4A8CED3639BA8B2C /* DCDicom-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DCDicom-umbrella.h"; sourceTree = "<group>"; };
+		364DD2D62A19D3FB244D94FFDC76C284 /* DicomDataElementSH.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementSH.swift; path = "Sources/DICOM/Data Elements/Strings/DicomDataElementSH.swift"; sourceTree = "<group>"; };
+		3699DB1CF248A5CD875DE02D53ED7762 /* DicomDataElementUS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementUS.swift; path = "Sources/DICOM/Data Elements/Numbers/DicomDataElementUS.swift"; sourceTree = "<group>"; };
+		370EE872094C1928C0D1E0AD9FB17B06 /* DicomError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomError.swift; path = "Sources/DICOM/Sub-Types/DicomError.swift"; sourceTree = "<group>"; };
+		3844CE8487B313A3E58B98156C15FE13 /* DicomTransferSyntax.json */ = {isa = PBXFileReference; includeInIndex = 1; name = DicomTransferSyntax.json; path = "Resources/DICOM Definitions/DicomTransferSyntax.json"; sourceTree = "<group>"; };
+		3AAB79160D1FEDCAFF30B250CC7971AC /* DicomDataElementIS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementIS.swift; path = "Sources/DICOM/Data Elements/Number Strings/DicomDataElementIS.swift"; sourceTree = "<group>"; };
+		4A2246450DAA51A8FC6B9AFE9B4156D0 /* DicomDataElementST.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementST.swift; path = "Sources/DICOM/Data Elements/Strings/DicomDataElementST.swift"; sourceTree = "<group>"; };
+		4AD2EF23C6914FC8566AA885BD48CFD6 /* DicomDataElementOL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementOL.swift; path = "Sources/DICOM/Data Elements/Other/DicomDataElementOL.swift"; sourceTree = "<group>"; };
+		4BEBD8AB2D5AAFDC821A4BABE7EF4C96 /* DicomDataElementSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementSL.swift; path = "Sources/DICOM/Data Elements/Numbers/DicomDataElementSL.swift"; sourceTree = "<group>"; };
+		4C61EF8AB1F610393E06C1F9A8647316 /* Pods-healthcare-code-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-healthcare-code-challenge.release.xcconfig"; sourceTree = "<group>"; };
+		523C190A662DAD7185B12C425D6352C2 /* Pods_healthcare_code_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_healthcare_code_challenge.framework; path = "Pods-healthcare-code-challenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		562066B4565DB0FA85FAA5825815B93D /* DicomTransferSyntax.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomTransferSyntax.swift; path = "Sources/DICOM/Sub-Types/DicomTransferSyntax.swift"; sourceTree = "<group>"; };
+		589682C4D2E608742B9F5B7FA0D8E5D9 /* DicomDataElementSQ.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementSQ.swift; path = "Sources/DICOM/Data Elements/Special Formats/DicomDataElementSQ.swift"; sourceTree = "<group>"; };
+		59763BC4AC511F2A507F2C8CD8FF93CB /* Pods-healthcare-code-challengeTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-healthcare-code-challengeTests-Info.plist"; sourceTree = "<group>"; };
+		5A8554C57E219BF5766828BBD2A65B37 /* DCDicom.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DCDicom.modulemap; sourceTree = "<group>"; };
+		5E6C2743374725DDCD550D034D84541B /* DicomVR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomVR.swift; path = "Sources/DICOM/Sub-Types/DicomVR.swift"; sourceTree = "<group>"; };
+		5FAC28A64C03C0ECF141529D19BB1780 /* DicomDataElementTM.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementTM.swift; path = "Sources/DICOM/Data Elements/Date and Time/DicomDataElementTM.swift"; sourceTree = "<group>"; };
+		606C1314082B37444005E3EC8F47D455 /* Pods-healthcare-code-challenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-healthcare-code-challenge-umbrella.h"; sourceTree = "<group>"; };
+		618FF227097ACF58F18ECA647E537DBC /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-healthcare-code-challenge-healthcare-code-challengeUITests-frameworks.sh"; sourceTree = "<group>"; };
+		63449FC6DADEF6F173230D819E7665E3 /* Pods-healthcare-code-challenge-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-healthcare-code-challenge-Info.plist"; sourceTree = "<group>"; };
+		64819698FAE73FB4F1C4C967E3343077 /* Pods-healthcare-code-challengeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-healthcare-code-challengeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		674F17D46E56428010342022BAE32306 /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-healthcare-code-challenge-healthcare-code-challengeUITests-dummy.m"; sourceTree = "<group>"; };
+		68A9339FAE7E7BE13642167A88C4FA9C /* Pods-healthcare-code-challengeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-healthcare-code-challengeTests-umbrella.h"; sourceTree = "<group>"; };
+		6C4C3E5F18D96A1B96C36EF61CC0BFCC /* TensorFlowLiteSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-prefix.pch"; sourceTree = "<group>"; };
+		6C9295F5AC2E38508EA7078E1D20ADAB /* DicomDataElementUN.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementUN.swift; path = "Sources/DICOM/Data Elements/Other/DicomDataElementUN.swift"; sourceTree = "<group>"; };
+		70B4EC1C88540970A93778188FA251B8 /* Tensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tensor.swift; path = tensorflow/lite/experimental/swift/Sources/Tensor.swift; sourceTree = "<group>"; };
+		73A9BC78E253AEC261C1C7E96E113152 /* DicomTag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomTag.swift; path = "Sources/DICOM/Sub-Types/DicomTag.swift"; sourceTree = "<group>"; };
+		74BE56FBBA5CB5C6CC054E7834B96350 /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-healthcare-code-challenge-healthcare-code-challengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		785EA0311F217EEEBF28DB4C24AABB8E /* DicomObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomObject.swift; path = Sources/DICOM/DicomObject.swift; sourceTree = "<group>"; };
+		7B75CA67E8BDF5251D1AA0C6520D2FBC /* DCDicom-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DCDicom-prefix.pch"; sourceTree = "<group>"; };
+		80DF3AA4A59726952934B7E3608F5212 /* DicomDataElementPN.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementPN.swift; path = "Sources/DICOM/Data Elements/Special Formats/DicomDataElementPN.swift"; sourceTree = "<group>"; };
+		8ACDC740B078CF0C8E773F25D62F3C97 /* DicomDataElementDS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementDS.swift; path = "Sources/DICOM/Data Elements/Number Strings/DicomDataElementDS.swift"; sourceTree = "<group>"; };
+		8DD03E3A58D145E9B3BA8382B7EE594E /* Interpreter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpreter.swift; path = tensorflow/lite/experimental/swift/Sources/Interpreter.swift; sourceTree = "<group>"; };
+		944884FE7977AC6298916BE514D9A4E6 /* TensorFlowLiteSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TensorFlowLiteSwift-Info.plist"; sourceTree = "<group>"; };
+		97C64C548AA07E948310F3872CEF05CA /* Pods-healthcare-code-challengeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-healthcare-code-challengeTests-dummy.m"; sourceTree = "<group>"; };
+		9B97BB6ED7350DFA07F56A7CF48E814E /* Pods-healthcare-code-challengeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-healthcare-code-challengeTests.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5DDE41DDD89889641A24296C43972FB /* Pods-healthcare-code-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-healthcare-code-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A66ADC78A9A699C08C9B345F9FD7EB27 /* TensorFlowLiteSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteSwift.xcconfig; sourceTree = "<group>"; };
+		A6D30BE365679C9946056036A2A5C58F /* MetalDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetalDelegate.swift; path = tensorflow/lite/experimental/swift/Sources/MetalDelegate.swift; sourceTree = "<group>"; };
+		AAF4517EF98A14D2ABC68FF4CAF1C8D3 /* DicomDataElementFL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementFL.swift; path = "Sources/DICOM/Data Elements/Numbers/DicomDataElementFL.swift"; sourceTree = "<group>"; };
+		AD0F88DBEE7EE9F867A265806304CCA2 /* DicomDataElementOW.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementOW.swift; path = "Sources/DICOM/Data Elements/Other/DicomDataElementOW.swift"; sourceTree = "<group>"; };
+		B0867C8590F6DF79F9E8D555649F6A4D /* DicomDataElementUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementUI.swift; path = "Sources/DICOM/Data Elements/Strings/DicomDataElementUI.swift"; sourceTree = "<group>"; };
+		B38F8306C8C4071FCAE9E1688484F695 /* DicomDataElementOF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementOF.swift; path = "Sources/DICOM/Data Elements/Other/DicomDataElementOF.swift"; sourceTree = "<group>"; };
+		B6A8B6E38A048C8993E09A4A3EEF3761 /* Pods-healthcare-code-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-healthcare-code-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9F8DF9AE44ED635A6F2C321C1E27C32 /* Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delegate.swift; path = tensorflow/lite/experimental/swift/Sources/Delegate.swift; sourceTree = "<group>"; };
+		BA09448DC1EEA81E95B4B526F0EAB296 /* TensorFlowLiteC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteC.xcconfig; sourceTree = "<group>"; };
+		BA35A0415E3093475DA4C1A3EFB51A9D /* Pods_healthcare_code_challenge_healthcare_code_challengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_healthcare_code_challenge_healthcare_code_challengeUITests.framework; path = "Pods-healthcare-code-challenge-healthcare-code-challengeUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC43ABC36A7A9ECBC2B16B42E0DB5E7 /* Pods-healthcare-code-challenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-healthcare-code-challenge-frameworks.sh"; sourceTree = "<group>"; };
+		C1039C4094B10F457032FC80FA3B355D /* DicomDataElementLT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementLT.swift; path = "Sources/DICOM/Data Elements/Strings/DicomDataElementLT.swift"; sourceTree = "<group>"; };
+		C35BB18C385CDAC9355B731BA7CEF5DF /* TensorFlowLiteSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TensorFlowLiteSwift-dummy.m"; sourceTree = "<group>"; };
+		C5356A24FA4C90077F68E2AE34B730F4 /* DicomDataElementUR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementUR.swift; path = "Sources/DICOM/Data Elements/Strings/DicomDataElementUR.swift"; sourceTree = "<group>"; };
+		C5736DFCB67692ACBBA767EFB0A447FA /* Pods-healthcare-code-challenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-healthcare-code-challenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		C5E234361A92B3B4AB92EDDB01AFB572 /* DCDicom.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DCDicom.xcconfig; sourceTree = "<group>"; };
+		C7ABF11D578BE9F23CFC2BEF8834FA79 /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-healthcare-code-challenge-healthcare-code-challengeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CAC79151AD3311FDF044213AED9A4537 /* DicomDataElementDA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementDA.swift; path = "Sources/DICOM/Data Elements/Date and Time/DicomDataElementDA.swift"; sourceTree = "<group>"; };
+		CD520C9AF842FD6420BB9F86945AC32F /* Model.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Model.swift; path = tensorflow/lite/experimental/swift/Sources/Model.swift; sourceTree = "<group>"; };
+		D28F27DB17F7869401063D6D28C88A6C /* DicomDataElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElement.swift; path = "Sources/DICOM/Data Elements/DicomDataElement.swift"; sourceTree = "<group>"; };
+		D4F6BCFCFADB1C374558126ED81483E2 /* DicomDataElementAE.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementAE.swift; path = "Sources/DICOM/Data Elements/Strings/DicomDataElementAE.swift"; sourceTree = "<group>"; };
+		D5985969A64BD98514128FF9A0FE2F1B /* DicomDataElementAS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementAS.swift; path = "Sources/DICOM/Data Elements/Strings/DicomDataElementAS.swift"; sourceTree = "<group>"; };
+		D982A2C6B8D3CAE47A63C49EEDD52F53 /* TensorFlowLiteC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TensorFlowLiteC.framework; path = Frameworks/TensorFlowLiteC.framework; sourceTree = "<group>"; };
+		DCEAB885E757F2726325DCD8C8154A57 /* Pods-healthcare-code-challengeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-healthcare-code-challengeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TensorFlowLite.framework; path = TensorFlowLiteSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2CC1D43098AFF2A019AE948FC886FB9 /* TensorFlowLiteSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-umbrella.h"; sourceTree = "<group>"; };
+		E4257E800D132F03F51457BA716C0522 /* DicomDataElementLO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementLO.swift; path = "Sources/DICOM/Data Elements/Strings/DicomDataElementLO.swift"; sourceTree = "<group>"; };
+		E583CBD394ABAE0A5D31DC1B0506C80B /* Pods_healthcare_code_challengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_healthcare_code_challengeTests.framework; path = "Pods-healthcare-code-challengeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B4010EAE7C5215DA60E2EFB2030493 /* TensorFlowLite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TensorFlowLite.swift; path = tensorflow/lite/experimental/swift/Sources/TensorFlowLite.swift; sourceTree = "<group>"; };
+		EAAC58A86C61DD2F75C6DBF2DECCAAB9 /* DCDicom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DCDicom.framework; path = DCDicom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF238E85AE723A1051CDCD1970BE20E4 /* DicomDataElementOB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementOB.swift; path = "Sources/DICOM/Data Elements/Other/DicomDataElementOB.swift"; sourceTree = "<group>"; };
+		F0AD2D78DDDB3D668299F1451A3B4C66 /* Pods-healthcare-code-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-healthcare-code-challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		F5C5534AD75A3D9231DD1D39B10B9344 /* Pods-healthcare-code-challenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-healthcare-code-challenge.modulemap"; sourceTree = "<group>"; };
+		F7B2DB3530C975B51FED8608D2E89224 /* DicomDataElementDT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DicomDataElementDT.swift; path = "Sources/DICOM/Data Elements/Date and Time/DicomDataElementDT.swift"; sourceTree = "<group>"; };
+		F8C1CB30711B933788B69FC0B935AD9D /* DCDicom-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DCDicom-Info.plist"; sourceTree = "<group>"; };
+		FE0B9894509CF2F5971DDF882489872E /* TensorFlowLiteSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TensorFlowLiteSwift.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0782FE4F1AED6AF8C41B6219D1EEA436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718DF2033B811EA1DB66D4EF20D5A611 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CF52B5378499A6CEB8CFEB84955DDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB252E9CA67FCAAD352F777576F14A23 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51C8932B1736BBFCD3B4C5E9F9DA52F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E5E152461DD1F10C7F45CAC19F84B79 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C1D13FEED4DF838B52932D87D16623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B6EC9BCD0AB41B9FD6DC9E6811D959B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72D77B4409DD2CFC659132DF19B3515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412B61B1352CB9277715C547016657B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		117F7D0308B47B3A4AF5D7C224D8A653 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAAC58A86C61DD2F75C6DBF2DECCAAB9 /* DCDicom.framework */,
+				523C190A662DAD7185B12C425D6352C2 /* Pods_healthcare_code_challenge.framework */,
+				BA35A0415E3093475DA4C1A3EFB51A9D /* Pods_healthcare_code_challenge_healthcare_code_challengeUITests.framework */,
+				E583CBD394ABAE0A5D31DC1B0506C80B /* Pods_healthcare_code_challengeTests.framework */,
+				E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D8DF6DC2788EDB65E193C7D265698EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3844CE8487B313A3E58B98156C15FE13 /* DicomTransferSyntax.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4E72E9311676D3B1B4C4499540EACD20 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A8554C57E219BF5766828BBD2A65B37 /* DCDicom.modulemap */,
+				C5E234361A92B3B4AB92EDDB01AFB572 /* DCDicom.xcconfig */,
+				0174E20D407189585C6296F0A9091AD0 /* DCDicom-dummy.m */,
+				F8C1CB30711B933788B69FC0B935AD9D /* DCDicom-Info.plist */,
+				7B75CA67E8BDF5251D1AA0C6520D2FBC /* DCDicom-prefix.pch */,
+				3246A1EFED45563D4A8CED3639BA8B2C /* DCDicom-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DCDicom";
+			sourceTree = "<group>";
+		};
+		535892BEDC1669FC7715712C82573758 /* TensorFlowLiteC */ = {
+			isa = PBXGroup;
+			children = (
+				D9387606CB05B43307D84A14E37E1690 /* Frameworks */,
+				99815BF1C5BF0ACF7247AA969B6D102A /* Support Files */,
+			);
+			name = TensorFlowLiteC;
+			path = TensorFlowLiteC;
+			sourceTree = "<group>";
+		};
+		5CD7A101B06A8907AC5B1F594123B40E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B05C671D7343F601D7CCA2D0CE15A6A9 /* Pods-healthcare-code-challenge */,
+				A22C5DF88F0EF8B4DB31BAC9CACC529D /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests */,
+				E5E528488ED55BBDD470689AA59AEC26 /* Pods-healthcare-code-challengeTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6BF87D039B6BFF4605DBBBC2120750B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6C0DCCF77F14B68D4247A7B534B952E /* DCDicom */,
+				535892BEDC1669FC7715712C82573758 /* TensorFlowLiteC */,
+				7EC4877F9BDA231D4C0453B5AFF22283 /* TensorFlowLiteSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7EC4877F9BDA231D4C0453B5AFF22283 /* TensorFlowLiteSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B9F8DF9AE44ED635A6F2C321C1E27C32 /* Delegate.swift */,
+				8DD03E3A58D145E9B3BA8382B7EE594E /* Interpreter.swift */,
+				000C9AFAF7D165F0D7F757F0D4F4881F /* InterpreterError.swift */,
+				A6D30BE365679C9946056036A2A5C58F /* MetalDelegate.swift */,
+				CD520C9AF842FD6420BB9F86945AC32F /* Model.swift */,
+				0122CAD6B8B12965947B0D68D26B53FE /* QuantizationParameters.swift */,
+				70B4EC1C88540970A93778188FA251B8 /* Tensor.swift */,
+				E6B4010EAE7C5215DA60E2EFB2030493 /* TensorFlowLite.swift */,
+				F8A40D9897E0F29F63710F846F6FB196 /* Support Files */,
+			);
+			name = TensorFlowLiteSwift;
+			path = TensorFlowLiteSwift;
+			sourceTree = "<group>";
+		};
+		99815BF1C5BF0ACF7247AA969B6D102A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA09448DC1EEA81E95B4B526F0EAB296 /* TensorFlowLiteC.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TensorFlowLiteC";
+			sourceTree = "<group>";
+		};
+		A22C5DF88F0EF8B4DB31BAC9CACC529D /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D6BC2930119748DD393D90BF316B887 /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests.modulemap */,
+				C7ABF11D578BE9F23CFC2BEF8834FA79 /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-acknowledgements.markdown */,
+				2AEC695324D7BFB4BDADD4B00A54EB53 /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-acknowledgements.plist */,
+				674F17D46E56428010342022BAE32306 /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-dummy.m */,
+				618FF227097ACF58F18ECA647E537DBC /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-frameworks.sh */,
+				04F11B032ADB23FF15F3FFD616DE5DE9 /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-Info.plist */,
+				1A8300F4DECC68D47813F4969E3ED5AD /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-umbrella.h */,
+				244AEBFCF8E2785F27042B672060929E /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests.debug.xcconfig */,
+				74BE56FBBA5CB5C6CC054E7834B96350 /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests.release.xcconfig */,
+			);
+			name = "Pods-healthcare-code-challenge-healthcare-code-challengeUITests";
+			path = "Target Support Files/Pods-healthcare-code-challenge-healthcare-code-challengeUITests";
+			sourceTree = "<group>";
+		};
+		B05C671D7343F601D7CCA2D0CE15A6A9 /* Pods-healthcare-code-challenge */ = {
+			isa = PBXGroup;
+			children = (
+				F5C5534AD75A3D9231DD1D39B10B9344 /* Pods-healthcare-code-challenge.modulemap */,
+				0E53CA7940BBD4E6A79D049C844B4766 /* Pods-healthcare-code-challenge-acknowledgements.markdown */,
+				C5736DFCB67692ACBBA767EFB0A447FA /* Pods-healthcare-code-challenge-acknowledgements.plist */,
+				09F1CA84E2BFD3F1A0C6697D0CCB2BC1 /* Pods-healthcare-code-challenge-dummy.m */,
+				BEC43ABC36A7A9ECBC2B16B42E0DB5E7 /* Pods-healthcare-code-challenge-frameworks.sh */,
+				63449FC6DADEF6F173230D819E7665E3 /* Pods-healthcare-code-challenge-Info.plist */,
+				606C1314082B37444005E3EC8F47D455 /* Pods-healthcare-code-challenge-umbrella.h */,
+				F0AD2D78DDDB3D668299F1451A3B4C66 /* Pods-healthcare-code-challenge.debug.xcconfig */,
+				4C61EF8AB1F610393E06C1F9A8647316 /* Pods-healthcare-code-challenge.release.xcconfig */,
+			);
+			name = "Pods-healthcare-code-challenge";
+			path = "Target Support Files/Pods-healthcare-code-challenge";
+			sourceTree = "<group>";
+		};
+		B6C0DCCF77F14B68D4247A7B534B952E /* DCDicom */ = {
+			isa = PBXGroup;
+			children = (
+				D28F27DB17F7869401063D6D28C88A6C /* DicomDataElement.swift */,
+				D4F6BCFCFADB1C374558126ED81483E2 /* DicomDataElementAE.swift */,
+				D5985969A64BD98514128FF9A0FE2F1B /* DicomDataElementAS.swift */,
+				1CE5F83B7F557E40EAC8112EA237679F /* DicomDataElementAT.swift */,
+				223098C6F4C28E1218D232593DA80C7F /* DicomDataElementCS.swift */,
+				CAC79151AD3311FDF044213AED9A4537 /* DicomDataElementDA.swift */,
+				8ACDC740B078CF0C8E773F25D62F3C97 /* DicomDataElementDS.swift */,
+				F7B2DB3530C975B51FED8608D2E89224 /* DicomDataElementDT.swift */,
+				0C5DCAC9AF22F0BA148E867A3A6A0AC5 /* DicomDataElementFD.swift */,
+				AAF4517EF98A14D2ABC68FF4CAF1C8D3 /* DicomDataElementFL.swift */,
+				3AAB79160D1FEDCAFF30B250CC7971AC /* DicomDataElementIS.swift */,
+				E4257E800D132F03F51457BA716C0522 /* DicomDataElementLO.swift */,
+				C1039C4094B10F457032FC80FA3B355D /* DicomDataElementLT.swift */,
+				EF238E85AE723A1051CDCD1970BE20E4 /* DicomDataElementOB.swift */,
+				2E857B2542A1119C1902CFEA4B979D3C /* DicomDataElementOD.swift */,
+				B38F8306C8C4071FCAE9E1688484F695 /* DicomDataElementOF.swift */,
+				4AD2EF23C6914FC8566AA885BD48CFD6 /* DicomDataElementOL.swift */,
+				AD0F88DBEE7EE9F867A265806304CCA2 /* DicomDataElementOW.swift */,
+				80DF3AA4A59726952934B7E3608F5212 /* DicomDataElementPN.swift */,
+				364DD2D62A19D3FB244D94FFDC76C284 /* DicomDataElementSH.swift */,
+				4BEBD8AB2D5AAFDC821A4BABE7EF4C96 /* DicomDataElementSL.swift */,
+				589682C4D2E608742B9F5B7FA0D8E5D9 /* DicomDataElementSQ.swift */,
+				06B95183334774DBD2B6FA13073B9D63 /* DicomDataElementSS.swift */,
+				4A2246450DAA51A8FC6B9AFE9B4156D0 /* DicomDataElementST.swift */,
+				5FAC28A64C03C0ECF141529D19BB1780 /* DicomDataElementTM.swift */,
+				039BFEF052C2DD442839BDEC411B1AB0 /* DicomDataElementUC.swift */,
+				B0867C8590F6DF79F9E8D555649F6A4D /* DicomDataElementUI.swift */,
+				088F25AD016E21F79385DEADABD927F7 /* DicomDataElementUL.swift */,
+				6C9295F5AC2E38508EA7078E1D20ADAB /* DicomDataElementUN.swift */,
+				C5356A24FA4C90077F68E2AE34B730F4 /* DicomDataElementUR.swift */,
+				3699DB1CF248A5CD875DE02D53ED7762 /* DicomDataElementUS.swift */,
+				2D481EC015B1436F0F33ADB6D91E9809 /* DicomDataElementUT.swift */,
+				370EE872094C1928C0D1E0AD9FB17B06 /* DicomError.swift */,
+				785EA0311F217EEEBF28DB4C24AABB8E /* DicomObject.swift */,
+				73A9BC78E253AEC261C1C7E96E113152 /* DicomTag.swift */,
+				562066B4565DB0FA85FAA5825815B93D /* DicomTransferSyntax.swift */,
+				5E6C2743374725DDCD550D034D84541B /* DicomVR.swift */,
+				3D8DF6DC2788EDB65E193C7D265698EF /* Resources */,
+				4E72E9311676D3B1B4C4499540EACD20 /* Support Files */,
+			);
+			name = DCDicom;
+			path = DCDicom;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				6BF87D039B6BFF4605DBBBC2120750B2 /* Pods */,
+				117F7D0308B47B3A4AF5D7C224D8A653 /* Products */,
+				5CD7A101B06A8907AC5B1F594123B40E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9387606CB05B43307D84A14E37E1690 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D982A2C6B8D3CAE47A63C49EEDD52F53 /* TensorFlowLiteC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5E528488ED55BBDD470689AA59AEC26 /* Pods-healthcare-code-challengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B97BB6ED7350DFA07F56A7CF48E814E /* Pods-healthcare-code-challengeTests.modulemap */,
+				64819698FAE73FB4F1C4C967E3343077 /* Pods-healthcare-code-challengeTests-acknowledgements.markdown */,
+				DCEAB885E757F2726325DCD8C8154A57 /* Pods-healthcare-code-challengeTests-acknowledgements.plist */,
+				97C64C548AA07E948310F3872CEF05CA /* Pods-healthcare-code-challengeTests-dummy.m */,
+				59763BC4AC511F2A507F2C8CD8FF93CB /* Pods-healthcare-code-challengeTests-Info.plist */,
+				68A9339FAE7E7BE13642167A88C4FA9C /* Pods-healthcare-code-challengeTests-umbrella.h */,
+				B6A8B6E38A048C8993E09A4A3EEF3761 /* Pods-healthcare-code-challengeTests.debug.xcconfig */,
+				A5DDE41DDD89889641A24296C43972FB /* Pods-healthcare-code-challengeTests.release.xcconfig */,
+			);
+			name = "Pods-healthcare-code-challengeTests";
+			path = "Target Support Files/Pods-healthcare-code-challengeTests";
+			sourceTree = "<group>";
+		};
+		F8A40D9897E0F29F63710F846F6FB196 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE0B9894509CF2F5971DDF882489872E /* TensorFlowLiteSwift.modulemap */,
+				A66ADC78A9A699C08C9B345F9FD7EB27 /* TensorFlowLiteSwift.xcconfig */,
+				C35BB18C385CDAC9355B731BA7CEF5DF /* TensorFlowLiteSwift-dummy.m */,
+				944884FE7977AC6298916BE514D9A4E6 /* TensorFlowLiteSwift-Info.plist */,
+				6C4C3E5F18D96A1B96C36EF61CC0BFCC /* TensorFlowLiteSwift-prefix.pch */,
+				E2CC1D43098AFF2A019AE948FC886FB9 /* TensorFlowLiteSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TensorFlowLiteSwift";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		25B0E0E54E2C3AFBE349D8B10144BB24 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A454FDF0B554FE4081CD4AFE4900272B /* DCDicom-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C749ED700D78D0C5C17BE9CBA9B27EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3E7867BC07EE81FE465DABE242CF53E /* Pods-healthcare-code-challengeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BFF0ACB65640898EE73CFF0F5B5E789 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BECEA75BC28D0A5EAD73B0A84D56B5A5 /* Pods-healthcare-code-challenge-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78208D4284DA5460EE036B234B831B9D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CDABD81CAD2F2287406F58F12242B0 /* TensorFlowLiteSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7CEC75D709536FC278F48F143B52735 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CC2B96AA1BAD174231D65496F5D4BD2 /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0EB79DF21B151CA3B3007F704B0DEF8D /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A81C298DBC5D096BF898E039BAC760B /* Build configuration list for PBXNativeTarget "Pods-healthcare-code-challenge-healthcare-code-challengeUITests" */;
+			buildPhases = (
+				A7CEC75D709536FC278F48F143B52735 /* Headers */,
+				24643814EBD6FF17B6B1635C39FBAAF6 /* Sources */,
+				D51C8932B1736BBFCD3B4C5E9F9DA52F /* Frameworks */,
+				9493A99FAB80FACCE8AC34A1508814DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				464DCA863EC9F9384F5A4F2225EB0EB3 /* PBXTargetDependency */,
+				1E3DFA7C6FA890700D1943B5984F5F53 /* PBXTargetDependency */,
+				080D3ADDA9107FB9E5E752FD1AF8E403 /* PBXTargetDependency */,
+			);
+			name = "Pods-healthcare-code-challenge-healthcare-code-challengeUITests";
+			productName = "Pods-healthcare-code-challenge-healthcare-code-challengeUITests";
+			productReference = BA35A0415E3093475DA4C1A3EFB51A9D /* Pods_healthcare_code_challenge_healthcare_code_challengeUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BEE4D4068BDD06E26CA520708ABB5DF /* Build configuration list for PBXNativeTarget "TensorFlowLiteSwift" */;
+			buildPhases = (
+				78208D4284DA5460EE036B234B831B9D /* Headers */,
+				B5E4027CF6A0738C877D048A2F15F3DC /* Sources */,
+				C6CF52B5378499A6CEB8CFEB84955DDE /* Frameworks */,
+				679E7170D73F96A9F6F4AF34B095DD4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C7C0C7FC1E8F36E403A9DA58D08A654 /* PBXTargetDependency */,
+			);
+			name = TensorFlowLiteSwift;
+			productName = TensorFlowLiteSwift;
+			productReference = E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A576EA691649C345AA422ED3CEB14C5 /* Pods-healthcare-code-challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6B73D89B483C2B23D5AF8AF52175143 /* Build configuration list for PBXNativeTarget "Pods-healthcare-code-challengeTests" */;
+			buildPhases = (
+				3C749ED700D78D0C5C17BE9CBA9B27EA /* Headers */,
+				F3510D558981E49D732532DD3AAE4E1A /* Sources */,
+				0782FE4F1AED6AF8C41B6219D1EEA436 /* Frameworks */,
+				755D2CB4971E90A569D1B507E3B2A5B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FDB70C7F1C7E29D0F180F9F9689E4E2 /* PBXTargetDependency */,
+			);
+			name = "Pods-healthcare-code-challengeTests";
+			productName = "Pods-healthcare-code-challengeTests";
+			productReference = E583CBD394ABAE0A5D31DC1B0506C80B /* Pods_healthcare_code_challengeTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		73FE05AABC20C576A43A10EA1455A18A /* DCDicom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FFB1D1DF179CB8BF59819389A803891 /* Build configuration list for PBXNativeTarget "DCDicom" */;
+			buildPhases = (
+				25B0E0E54E2C3AFBE349D8B10144BB24 /* Headers */,
+				AC7A7259B846F19CB882399C8F36094D /* Sources */,
+				E4C1D13FEED4DF838B52932D87D16623 /* Frameworks */,
+				E1B51638ED6754766D4D47EC4C7C58DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCDicom;
+			productName = DCDicom;
+			productReference = EAAC58A86C61DD2F75C6DBF2DECCAAB9 /* DCDicom.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D865E1F59B319434B44645859C8C47B5 /* Pods-healthcare-code-challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95DEBCE7E6210D4C722272D563B166F1 /* Build configuration list for PBXNativeTarget "Pods-healthcare-code-challenge" */;
+			buildPhases = (
+				5BFF0ACB65640898EE73CFF0F5B5E789 /* Headers */,
+				D34F72B9E5FD8764E1B2511A55698AC8 /* Sources */,
+				F72D77B4409DD2CFC659132DF19B3515 /* Frameworks */,
+				0A4F2F391C390779C9C57F57610D6484 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03703CC145BBD899998734F74D645846 /* PBXTargetDependency */,
+				4F1B99918CB3C3EB810374315F0E2DE4 /* PBXTargetDependency */,
+				F26ACD89701C8A4C3D3A7B70E60C8559 /* PBXTargetDependency */,
+			);
+			name = "Pods-healthcare-code-challenge";
+			productName = "Pods-healthcare-code-challenge";
+			productReference = 523C190A662DAD7185B12C425D6352C2 /* Pods_healthcare_code_challenge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 117F7D0308B47B3A4AF5D7C224D8A653 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73FE05AABC20C576A43A10EA1455A18A /* DCDicom */,
+				D865E1F59B319434B44645859C8C47B5 /* Pods-healthcare-code-challenge */,
+				0EB79DF21B151CA3B3007F704B0DEF8D /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests */,
+				5A576EA691649C345AA422ED3CEB14C5 /* Pods-healthcare-code-challengeTests */,
+				AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */,
+				10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A4F2F391C390779C9C57F57610D6484 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679E7170D73F96A9F6F4AF34B095DD4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		755D2CB4971E90A569D1B507E3B2A5B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9493A99FAB80FACCE8AC34A1508814DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B51638ED6754766D4D47EC4C7C58DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9F9724BBF220DD9BD50D1F81C25E85 /* DicomTransferSyntax.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24643814EBD6FF17B6B1635C39FBAAF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9F123559A0671CCE25BB8D27F3608F /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC7A7259B846F19CB882399C8F36094D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B287E19D7C0AE3EBBCC976A2D28A2337 /* DCDicom-dummy.m in Sources */,
+				9B114FE32AC17C783DC87EA275FBA39C /* DicomDataElement.swift in Sources */,
+				543FF82030477914A837718DB8A34F65 /* DicomDataElementAE.swift in Sources */,
+				7D9F082BD9613295344E23C37851335F /* DicomDataElementAS.swift in Sources */,
+				B3C9685C9346C358EB48CD68D1ACEB6F /* DicomDataElementAT.swift in Sources */,
+				E7C1625A84A571BB707293D9BE465DC1 /* DicomDataElementCS.swift in Sources */,
+				7E88F275622810CE353DD7B7B37AEDA5 /* DicomDataElementDA.swift in Sources */,
+				17D6786F6A2E9D902E5AE4AAC2739BEE /* DicomDataElementDS.swift in Sources */,
+				A818157F99F2A2AC4F0F0BBF48E1D4E1 /* DicomDataElementDT.swift in Sources */,
+				3AED8060CBB976578651901AEFEA8442 /* DicomDataElementFD.swift in Sources */,
+				BA4C7C03BEB561956A5FB7A40E35B13B /* DicomDataElementFL.swift in Sources */,
+				1E3CC1DF715135FF269CAF8B8511CD78 /* DicomDataElementIS.swift in Sources */,
+				8BFCEEDB3535BB78627F70ACCA6CD3F7 /* DicomDataElementLO.swift in Sources */,
+				8CADB5CD8E54CB47B61E90FEF6A209DD /* DicomDataElementLT.swift in Sources */,
+				4FF0E67DBBA8B1C5D7F4029A61A443A1 /* DicomDataElementOB.swift in Sources */,
+				2F25EAEFDA725588E8DE52289E62B1AB /* DicomDataElementOD.swift in Sources */,
+				37FACB1D93205FF7BFF27C22EB10BF54 /* DicomDataElementOF.swift in Sources */,
+				AE6594DD76FD8DAAC2AEB5953D9C4615 /* DicomDataElementOL.swift in Sources */,
+				4F748E2112799562F3B2E910D6572F99 /* DicomDataElementOW.swift in Sources */,
+				C6D70DAF9AB45AA800DDB334619CDD07 /* DicomDataElementPN.swift in Sources */,
+				E5AD9AD810C817160095941EB172D8CA /* DicomDataElementSH.swift in Sources */,
+				7959DF598DB15A3F2C50FF669EE80890 /* DicomDataElementSL.swift in Sources */,
+				17BF182CE0E81EFEBDBE10D57CED66D0 /* DicomDataElementSQ.swift in Sources */,
+				2D0C2314BD59E54551BD4779A5D1DF37 /* DicomDataElementSS.swift in Sources */,
+				8B48FA598A75200DB96E5E45B644089A /* DicomDataElementST.swift in Sources */,
+				B24A22D0E5C91B2BBD0E0B4A43BBEEEC /* DicomDataElementTM.swift in Sources */,
+				D0947EB66527FB85E6644256A62C2212 /* DicomDataElementUC.swift in Sources */,
+				160F21462D76A12ACFB00F30D8ADA2F6 /* DicomDataElementUI.swift in Sources */,
+				80B5E8F0384983DFF506060B7916C41F /* DicomDataElementUL.swift in Sources */,
+				368135B3A1C3747D2BEEC6B8121FE642 /* DicomDataElementUN.swift in Sources */,
+				5EC70A11ACBE80A069B8AD8D3EF24044 /* DicomDataElementUR.swift in Sources */,
+				24FFF166A136D256BF8E619B75F794B6 /* DicomDataElementUS.swift in Sources */,
+				73D334D63DC32F3987BF28439689CDB0 /* DicomDataElementUT.swift in Sources */,
+				3CD4FB0948702C2E3014C7D07EEF08AF /* DicomError.swift in Sources */,
+				E03911712FC552F9E8049E9EC48F0603 /* DicomObject.swift in Sources */,
+				90636994299C4BA6CD9E51ABEB812C74 /* DicomTag.swift in Sources */,
+				F0F04691A993A3750A4DD0D6FD7D2D31 /* DicomTransferSyntax.swift in Sources */,
+				D26CA37D99246B603996AD13F7CF0C31 /* DicomVR.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5E4027CF6A0738C877D048A2F15F3DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B30DFF9007000B08CA3613C616943724 /* Delegate.swift in Sources */,
+				89AA3C20F56E771C5934B2DCAA379CC4 /* Interpreter.swift in Sources */,
+				EE7899063120392B7E2BECDA0C8D3086 /* InterpreterError.swift in Sources */,
+				0E993296CF79F75FB6EA210A5AC531FD /* MetalDelegate.swift in Sources */,
+				B9BD81110588FF8EF267BD6647951BD4 /* Model.swift in Sources */,
+				30806718C80ACFD657320ADD85869F3A /* QuantizationParameters.swift in Sources */,
+				E677E11481A8D892C303DCE89B807BA6 /* Tensor.swift in Sources */,
+				405DB926AB8462D8F5F96C5576BD24F1 /* TensorFlowLite.swift in Sources */,
+				8DA7D5FE089801A38D7226BB422A3AE9 /* TensorFlowLiteSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34F72B9E5FD8764E1B2511A55698AC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17735CAB10A38913E47338A1E1773113 /* Pods-healthcare-code-challenge-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3510D558981E49D732532DD3AAE4E1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E2901463AD29A62FFA4B4067F61D84 /* Pods-healthcare-code-challengeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03703CC145BBD899998734F74D645846 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DCDicom;
+			target = 73FE05AABC20C576A43A10EA1455A18A /* DCDicom */;
+			targetProxy = FF7DB3B60473606CC2379E330DC4D52C /* PBXContainerItemProxy */;
+		};
+		080D3ADDA9107FB9E5E752FD1AF8E403 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TensorFlowLiteSwift;
+			target = 10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */;
+			targetProxy = 4EDEB2B3FA4A7A690C8F4A49A501D72D /* PBXContainerItemProxy */;
+		};
+		1E3DFA7C6FA890700D1943B5984F5F53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TensorFlowLiteC;
+			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
+			targetProxy = 62C4CD65D8FF64BA1ED10C95A6FED888 /* PBXContainerItemProxy */;
+		};
+		464DCA863EC9F9384F5A4F2225EB0EB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DCDicom;
+			target = 73FE05AABC20C576A43A10EA1455A18A /* DCDicom */;
+			targetProxy = 81F3C372F5F10677378560C75C14CF32 /* PBXContainerItemProxy */;
+		};
+		4F1B99918CB3C3EB810374315F0E2DE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TensorFlowLiteC;
+			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
+			targetProxy = D26E06CD5A9004A91EE92E589BB505C3 /* PBXContainerItemProxy */;
+		};
+		7FDB70C7F1C7E29D0F180F9F9689E4E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-healthcare-code-challenge";
+			target = D865E1F59B319434B44645859C8C47B5 /* Pods-healthcare-code-challenge */;
+			targetProxy = 8E250659101E159A40CBD25462473F17 /* PBXContainerItemProxy */;
+		};
+		9C7C0C7FC1E8F36E403A9DA58D08A654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TensorFlowLiteC;
+			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
+			targetProxy = 9CD29C43799CE27402701E8FDBF5CACF /* PBXContainerItemProxy */;
+		};
+		F26ACD89701C8A4C3D3A7B70E60C8559 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TensorFlowLiteSwift;
+			target = 10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */;
+			targetProxy = 2851460AC34A5973C06B9AF30F0ABFE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1D7AAA2BA4E47C333DA9BB2DA29FEC35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0AD2D78DDDB3D668299F1451A3B4C66 /* Pods-healthcare-code-challenge.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-healthcare-code-challenge/Pods-healthcare-code-challenge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-healthcare-code-challenge/Pods-healthcare-code-challenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2705E169450EA01DED452BFCC78ACD4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA09448DC1EEA81E95B4B526F0EAB296 /* TensorFlowLiteC.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3140A14B681E6AAEB579B4507833B894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66ADC78A9A699C08C9B345F9FD7EB27 /* TensorFlowLiteSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift.modulemap";
+				PRODUCT_MODULE_NAME = TensorFlowLite;
+				PRODUCT_NAME = TensorFlowLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3DCC741AFE4A7DFDED099A2E5368F568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6A8B6E38A048C8993E09A4A3EEF3761 /* Pods-healthcare-code-challengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-healthcare-code-challengeTests/Pods-healthcare-code-challengeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-healthcare-code-challengeTests/Pods-healthcare-code-challengeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		616588543AE18358EB04CB382B0552B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA09448DC1EEA81E95B4B526F0EAB296 /* TensorFlowLiteC.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7042CF540ACE73D6311B6EEBFE4C1D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5DDE41DDD89889641A24296C43972FB /* Pods-healthcare-code-challengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-healthcare-code-challengeTests/Pods-healthcare-code-challengeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-healthcare-code-challengeTests/Pods-healthcare-code-challengeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		925C1AA0EA52F628F1D04A310084E56E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5E234361A92B3B4AB92EDDB01AFB572 /* DCDicom.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DCDicom/DCDicom-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DCDicom/DCDicom-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DCDicom/DCDicom.modulemap";
+				PRODUCT_MODULE_NAME = DCDicom;
+				PRODUCT_NAME = DCDicom;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B44DCF109FC9298D1B9D4A5EE2EE66F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74BE56FBBA5CB5C6CC054E7834B96350 /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-healthcare-code-challenge-healthcare-code-challengeUITests/Pods-healthcare-code-challenge-healthcare-code-challengeUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-healthcare-code-challenge-healthcare-code-challengeUITests/Pods-healthcare-code-challenge-healthcare-code-challengeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D2B715A7A5AE4AF7EECA14F48EE312F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5E234361A92B3B4AB92EDDB01AFB572 /* DCDicom.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DCDicom/DCDicom-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DCDicom/DCDicom-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DCDicom/DCDicom.modulemap";
+				PRODUCT_MODULE_NAME = DCDicom;
+				PRODUCT_NAME = DCDicom;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DAE0A0BE1321505019F1A67ED1D2ACD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66ADC78A9A699C08C9B345F9FD7EB27 /* TensorFlowLiteSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift.modulemap";
+				PRODUCT_MODULE_NAME = TensorFlowLite;
+				PRODUCT_NAME = TensorFlowLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4620ABE9082CCA1319873A9FA4C000B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244AEBFCF8E2785F27042B672060929E /* Pods-healthcare-code-challenge-healthcare-code-challengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-healthcare-code-challenge-healthcare-code-challengeUITests/Pods-healthcare-code-challenge-healthcare-code-challengeUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-healthcare-code-challenge-healthcare-code-challengeUITests/Pods-healthcare-code-challenge-healthcare-code-challengeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F75D39176D0F3720608608CA15568252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C61EF8AB1F610393E06C1F9A8647316 /* Pods-healthcare-code-challenge.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-healthcare-code-challenge/Pods-healthcare-code-challenge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-healthcare-code-challenge/Pods-healthcare-code-challenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		243169D7A56C0468A9C10463619D018A /* Build configuration list for PBXAggregateTarget "TensorFlowLiteC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616588543AE18358EB04CB382B0552B2 /* Debug */,
+				2705E169450EA01DED452BFCC78ACD4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A81C298DBC5D096BF898E039BAC760B /* Build configuration list for PBXNativeTarget "Pods-healthcare-code-challenge-healthcare-code-challengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4620ABE9082CCA1319873A9FA4C000B /* Debug */,
+				B44DCF109FC9298D1B9D4A5EE2EE66F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FFB1D1DF179CB8BF59819389A803891 /* Build configuration list for PBXNativeTarget "DCDicom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				925C1AA0EA52F628F1D04A310084E56E /* Debug */,
+				D2B715A7A5AE4AF7EECA14F48EE312F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BEE4D4068BDD06E26CA520708ABB5DF /* Build configuration list for PBXNativeTarget "TensorFlowLiteSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3140A14B681E6AAEB579B4507833B894 /* Debug */,
+				DAE0A0BE1321505019F1A67ED1D2ACD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95DEBCE7E6210D4C722272D563B166F1 /* Build configuration list for PBXNativeTarget "Pods-healthcare-code-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D7AAA2BA4E47C333DA9BB2DA29FEC35 /* Debug */,
+				F75D39176D0F3720608608CA15568252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6B73D89B483C2B23D5AF8AF52175143 /* Build configuration list for PBXNativeTarget "Pods-healthcare-code-challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DCC741AFE4A7DFDED099A2E5368F568 /* Debug */,
+				7042CF540ACE73D6311B6EEBFE4C1D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

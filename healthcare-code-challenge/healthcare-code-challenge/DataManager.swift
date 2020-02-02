@@ -12,12 +12,16 @@ protocol dataInteraction: class {
     func setupView()
 }
 
+
 class DataManager {
+    let DEV = false
+
     static let shared = DataManager()
     private weak var delegate: dataInteraction?
 
     private var studyMetaData: [StudyMetaData] = []
     var studyInstances: [Int: Data] = [:]
+    var finishedRequesting: Bool = false
     var finishedLoading: Bool = false
     
     private init() {
@@ -43,34 +47,49 @@ class DataManager {
     }
     
     private func loadInstances() {
+        var instancesToRequest = studyMetaData.count
         var instancesToLoad = studyMetaData.count
+        if DEV {
+            instancesToRequest = 1
+            instancesToLoad = 1
+        }
         for element in studyMetaData {
-            let studyUID = element.studyUID
-            let seriesUID = element.seriesUID
-            let instanceUID = element.instanceUID
-            let instanceNumber = element.instanceNumber
-            ConnectionManager.shared.loadWSI(
-                studyUID: studyUID,
-                seriesUID: seriesUID,
-                instanceUID: instanceUID,
-                completion:(
-                    { result in
-                        switch result {
-                        case .success(let data):
-                            self.studyInstances[instanceNumber] = data
-                            instancesToLoad -= 1
-                            if instancesToLoad == 0 {
-                                print("Finished loading")
-                                self.finishedLoading = true
-                                self.delegate?.setupView()
+//            print(instancesToRequest)
+            if !self.finishedRequesting {
+                instancesToRequest -= 1
+                if instancesToRequest == 0 {
+                    print("Finished Requesting")
+                    self.finishedRequesting = true
+                }
+                let studyUID = element.studyUID
+                let seriesUID = element.seriesUID
+                let instanceUID = element.instanceUID
+                let instanceNumber = element.instanceNumber
+                ConnectionManager.shared.loadWSI(
+                    studyUID: studyUID,
+                    seriesUID: seriesUID,
+                    instanceUID: instanceUID,
+                    completion:(
+                        { result in
+                            switch result {
+                            case .success(let data):
+                                instancesToLoad -= 1
+                                if instancesToLoad == 0 {
+                                    print("Finished Requesting")
+                                    self.finishedLoading = true
+                                    self.delegate?.setupView()
+                                }
+                                self.studyInstances[instanceNumber] = data
+                                print(instanceNumber)
+                            case .failure(let error):
+                                print("Could not connect due to: ")
+                                print(error)
                             }
-                        case .failure(let error):
-                            print("Could not connect due to: ")
-                            print(error)
                         }
-                    }
+                    )
                 )
-            )
+            }
+            
         }
     }
 }

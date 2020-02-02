@@ -1,0 +1,24 @@
+PODS:
+  - DCDicom (0.3.2)
+  - TensorFlowLiteC (2.1.0)
+  - TensorFlowLiteSwift (2.1.0):
+    - TensorFlowLiteC (= 2.1.0)
+
+DEPENDENCIES:
+  - DCDicom (~> 0.3)
+  - TensorFlowLiteSwift
+
+SPEC REPOS:
+  trunk:
+    - DCDicom
+    - TensorFlowLiteC
+    - TensorFlowLiteSwift
+
+SPEC CHECKSUMS:
+  DCDicom: 0e5fe0d7f6db591c75aff9bb174dba6bb0121661
+  TensorFlowLiteC: 215603d4426d93810eace5947e317389554a4b66
+  TensorFlowLiteSwift: 9d8137f18d5ac30ca89bba4fbe118e0949ac5743
+
+PODFILE CHECKSUM: 4b424631875c87b8997fbbe427621c235e79f463
+
+COCOAPODS: 1.8.4

@@ -8,12 +8,6 @@
 
 import UIKit
 
-enum APIError: Error {
-    case responseProblem
-    case decodingProblem
-    case encodingProblem
-    case otherProblem
-}
 
 class ViewController: UIViewController {
     
